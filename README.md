@@ -448,3 +448,10 @@ git reset --soft eff544f # Te recuperará todos los cambios que tengas diferente
 git checkout master
 git merge eff544f # Fusionará en un nuevo commit la historia de master con el momento específico en el que vive eff544f
 ```
+
+## Convenciones para el nombramiento de branchs
+
+	• Utilizar nombres cortos y descriptivos
+	• Utilizar nombres en minuscula separados por guiones o barra diagonal
+	• Utilizar prefijos
+Evitar nombres genericos
