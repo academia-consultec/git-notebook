@@ -14,7 +14,7 @@
 - [Como revertir cambios](#como-revertir-cambios)
 - [Repositorios remotos](#repositorios-remotos)
 
-## Sistemas de Control de versiones
+## Sistemas de Control de versiones 📝
 
 Un sistema de control de versiones es una herramienta fundamental para el desarrollo de cualquier proyecto. Permite mantener un historial de cambios en los archivos, evitar la pérdida de datos, facilitar la colaboración en equipo y mejorar la gestión de cambios en el proyecto.
 
