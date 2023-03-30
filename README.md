@@ -3,6 +3,18 @@
 
 # Introducción de GIT
 
+## Contenido
+- [Sistemas de Control de versiones](#sistemas-de-control-de-versiones)
+- [Que es GIT](#que-es-git)
+- [Archivos de Texto y Binarios](#archivos-de-texto-y-binarios)
+- [Crear un repositorio y un commit](#crear-un-repositorio-y-un-commit)
+- [Verificar cambios entre archivos DIFF](#verificar-cambios-entre-archivos)
+- [Que es el Staging y los Branch](#que-es-el-staging-y-los-branch)
+- [Que es un Merge](#que-es-un-merge)
+- [Como volver en el tiempo](#como-volver-en-el-tiempo)
+- [Como revertir cambios](#como-revertir-cambios)
+- [Repositorios remotos](#repositorios-remotos)
+
 ## Sistemas de Control de versiones
 
 Un sistema de control de versiones es una herramienta fundamental para el desarrollo de cualquier proyecto. Permite mantener un historial de cambios en los archivos,  
@@ -47,16 +59,37 @@ Es importante recordar que al retroceder en el tiempo, los cambios realizados po
 
 ## ¿Cómo revertir cambios?
 
+<<<<<<< HEAD
 En Git hay varias formas de revertir cambios. Puedes revertir un commit específico utilizando el comando **`git revert`**, o revertir un archivo a su versión anterior utilizando **`git checkout`**.  
-Si deseas revertir varios commits, puedes utilizar **`git revert -n`**.  
-Además, existe la opción de utilizar el comando **`git reset`**, aunque es una operación peligrosa. Al revertir cambios, se crean nuevos commits que deshacen los cambios realizados,  
+Si deseas revertir varios commits, puedes utilizar **`git revert -n`**. 
+Además, existe la opción de utilizar el comando **`git reset`**, aunque es una operación peligrosa. Al revertir cambios, se crean nuevos commits que deshacen los cambios realizados, 
 y es importante recordar que siempre se puede volver a los cambios originales si es necesario. Se recomienda crear una nueva rama antes de realizar cambios importantes para poder revertirlos de manera segura si es necesario.
+=======
+En Git hay varias formas de revertir cambios. Puedes revertir un commit específico utilizando el comando **`git revert`**, o revertir un archivo a su versión anterior utilizando **`git checkout`**
+. Si deseas revertir varios commits, puedes utilizar **`git revert -n`**
+. Además, existe la opción de utilizar el comando **`git reset`**, aunque es una operación peligrosa. Al revertir cambios, se crean nuevos commits que deshacen los cambios realizados, y es importante recordar que siempre se puede volver a los cambios originales si es necesario. Se recomienda crear una nueva rama antes de realizar cambios importantes para poder revertirlos de manera segura si es necesario. Algunos tipos de git reset son los siguientes: `git reset --hard` vuelve a un punto en la historia y elimina todo lo que sigue, permitiendo eliminar permanentemente los cambios, `git reset --soft` regresa a un punto de la historia pero sin eliminar los cambios siguientes.  
+
+### Flags para git reset
+
+- git reset --soft: Permite volver hacia un commit anterior suponiendo que lo de mas adelanta "no existe".
+
+- git reset --hard: ¡¡¡PELIGROSO!!! Directamente dice que todo lo que le sigue al commit al que regresaste no existe, se pierde esa sección de la historia del branch.
+>>>>>>> main
 
 ## Repositorios remotos
 
 Un repositorio remoto en Git es una versión de tu proyecto alojada en un servidor remoto. Te permite colaborar con otros desarrolladores y mantener una copia segura de tu código en caso de pérdida o daño en tu computadora local. Para trabajar con repositorios remotos en Git, debes vincular tu repositorio local con el repositorio remoto mediante el comando **`git remote add`**
 . Puedes enviar tus cambios locales al repositorio remoto utilizando **`git push`**, y descargar los cambios realizados en el repositorio remoto utilizando **`git fetch`**
 . Los repositorios remotos son esenciales para el trabajo colaborativo con Git.
+**git clone --mirror <repositorio-a-duplicar> <repositorio-donde-alojar-nuevo-repo>**
+- todas las refs estaran disponibles en el repositorio nuevo como una copia del original
+- obtendras todas las tags
+- obtendras todas las ramas
+- todas las ramas remotas estaran disponibles en el repositorio destiono.
+paso:
+- git clone --mirror <repositorio-fuente>
+- git remote set-url --push origin <repositori-destino>
+- git push --mirror
 
 ## Peticiones de cambios
 
@@ -68,7 +101,7 @@ El merge es el proceso de fusionar dos ramas en Git, normalmente la rama princip
 
 ## Gestión de ramas
 
-La gestión de ramas en Git permite trabajar en diferentes características de forma aislada sin interferir entre ellas. Esto se logra a través de la creación, eliminación, combinación y comparación de ramas. Además, la funcionalidad de etiquetado permite identificar y etiquetar versiones específicas del software.
+La gestión de ramas en Git permite trabajar en diferentes características de forma aislada sin interferir entre ellas. Esto se logra a través de la creación, eliminación, combinación y comparación de ramas. Además, la funcionalidad de etiquetado permite identificar y etiquetar versiones específicas del software. Para conocer las ramas existentes y la rama de trabajo local se puede utilizar el comando **`git branch`** el cual lo imprime en línea de comando.
 
 ## Forks en control de versiones
 
@@ -83,6 +116,11 @@ Los tags en Git son identificadores asociados a versiones específicas de un rep
 **`git fetch`** se utiliza para descargar los cambios del repositorio remoto, **`git pull`**
  combina los cambios descargados con la rama actual en tu repositorio local y **`git push`**
  se utiliza para enviar los cambios locales al repositorio remoto.
+
+# Diferencias de GIT fetch y pull
+
+**`git fetch`** es el comando que le dice a tu git local que recupere la última información de los metadatos del original (aunque no hace ninguna transferencia de archivos.Es más bien como comprobar si hay algún cambio disponible). 
+**`git pull`** por otro lado hace eso Y trae (copia) esos cambios del repositorio remoto. 
 
 ## .gitignore
 
@@ -164,3 +202,52 @@ Ambos comandos son útiles para realizar búsquedas y obtener información sobre
 ## **Repositorios dentro de otros repositorios (Submódulos)**
 
 Los submódulos en Git permiten mantener en un solo repositorio, múltiples subproyectos alojados en otros repositorios. Esto es útil cuando se quiere incluir un proyecto dentro de otro proyecto más grande, sin tener que copiar todo el código y mantener ambas copias separadas. Al usar submódulos, se puede mantener una referencia al repositorio original y permitir la actualización y la colaboración en ambos proyectos de manera más eficiente.
+
+## ¿Que son los tags?
+- Los tags o etiquetas se parecen al mensaje del commit.
+- Son identificadores asociados a versiones especificas de un repositorio.
+- Debemos usarlas para versionamiento productivo.
+- Estos versionamientos pueden ser lanzamiento de software o marcar hitos importantes.
+> version Alpha: Es el punto mas bajo del sistema.
+
+> version Beta: Es el punto intermedio del producto (version semiestable).
+
+> version release: de ellas se espera que esten mas cerca a produccion.
+
+> version 1.0: es la mas estable que se logra conseguir.
+
+> con **git tag** tenemos un identificador estatico.
+
+> podemos usar **git checkout tag** para llegar a un identificador del punto de la historia.
+
+## Comandos para la creacion de un tag
+- **git tag v1.0** para asignar el tag.
+- **git tag -s v1.0** envia un parametro al comando para firmar los tags.
+- **git push -tags** para publicar los tags
+- **git show v1.0** para mostrar informacion de un tag como si fuera un git log.
+
+## Comandos para GIT fetch, pull y push
+- usamos **git fetch** descarga los cambios de un repositorio remoto a local.
+- usamos **git pull** combina automaticamente los cambios del repositorio remoto con la rama actual en tu repositorio actual.
+- usamos **git push** se usa para enviar cambios en la rama actual de tu repositorio local al repositorio remoto.
+
+## Comando Basicos de GIT
+
+- `git init`
+- `git add <Archivo>`
+- `git add .`
+- `git commit -m "Mensaje"`
+- `git diff <Archivo>`
+- `git diff <hash><Archivo>`
+- `git status`
+- `git branch <CurNombre><NuevoNombre>`
+- `git checkout <NombreDelBranch>`
+- `git checkout -b <NuevoNombre>`
+
+## Video Informativo sobre git (explicacion completa)
+Si te intera saber mas sobre git y [¿Como Funciona git?](https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&cad=rja&uact=8&ved=2ahUKEwjawdTC9oP-AhWuEVkFHSwPB4sQtwJ6BAgLEAI&url=https%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3DjGehuhFhtnE&usg=AOvVaw3EzVfE049RTxvTijwZ3C9z)
+aqui te muestro un video util y completo.
+
+git tag -s v1.0 (firma la creación de un tag)
+fork permite experimentar con el código sin el temor de dañar el respositorio original
+
