@@ -38,13 +38,13 @@ Para crear un repositorio y un commit en Git, se debe inicializar el repositorio
 Para verificar los cambios entre dos versiones de un archivo en Git, se debe utilizar el comando **`git diff`**
 . Este comando mostrará las diferencias entre el archivo actual y su última versión guardada o entre una versión específica del archivo y su versión actual.
 
-## ¿Qué es un Merge?
-
-El Merge en Git es el proceso de combinar dos o más ramas en una sola rama. Se utiliza comúnmente para integrar cambios>
-
-## ¿Qué es el Staging y los Branch?
+## ¿Qué es el Staging y los Branch? 🌲
 
 El Staging y las Branches son dos conceptos importantes en Git. El Staging permite preparar los cambios antes de realizar un commit, mientras que las Branches permiten organizar el trabajo en diferentes funcionalidades del proyecto sin afectar el trabajo de otros desarrolladores.
+
+## ¿Qué es un Merge? 🤝
+
+El Merge en Git es el proceso de combinar dos o más ramas en una sola rama. Se utiliza comúnmente para integrar cambios>
 
 ## ¿Cómo volver en el tiempo?
 
