@@ -5,6 +5,9 @@
 # Introducción de GIT - Siempre listo 30 de marzo del 2023
 Este documento contiene información sobre la herramienta de GIT
 
+## github
+GitHub es una plataforma de desarrollo colaborativo de software para alojar proyectos utilizando el sistema de control de versiones Git.
+
 ## Contenido
 - [Sistemas de Control de versiones](#sistemas-de-control-de-versiones-)
 - [Que es GIT](#qué-es-git)
@@ -82,7 +85,6 @@ NOTA: Utiliza el comando **`git log`** para ver el historial del commit junto al
 
 ## ¿Qué es el Staging y los Branch? 🌲
 
-
 El Staging y las Branches son dos conceptos importantes en Git. El Staging permite preparar los cambios antes de realizar un commit,  
 mientras que las Branches permiten organizar el trabajo en diferentes funcionalidades del proyecto sin afectar el trabajo de otros desarrolladores.
 
@@ -91,7 +93,7 @@ mientras que las Branches permiten organizar el trabajo en diferentes funcionali
 El Merge en Git es el proceso de combinar dos o más ramas en una sola rama. Se utiliza comúnmente para integrar cambios realizados en Branches separadas en la rama principal del proyecto.  
 El proceso de Merge implica cambiar a la rama de destino, ejecutar el comando de Merge, resolver conflictos (si es necesario) y crear un nuevo commit.
 
-### ¿Cómo volver en el tiempo? 🕧
+## ¿Cómo volver en el tiempo? 🕧
 
 En Git hay varias formas de volver en el tiempo para acceder a versiones anteriores de un proyecto, como revertir un commit, cambiar al estado de un commit anterior, crear una nueva rama desde un commit anterior o utilizar el comando reset.  
 Es importante recordar que al retroceder en el tiempo, los cambios realizados posteriormente se perderán, a menos que se hayan guardado en una rama o commit diferente, por lo que se recomienda crear ramas y commits nuevos regularmente para evitar perder trabajo importante.
@@ -105,15 +107,17 @@ y es importante recordar que siempre se puede volver a los cambios originales si
 
 En Git hay varias formas de revertir cambios. Puedes revertir un commit específico utilizando el comando **`git revert`**, o revertir un archivo a su versión anterior utilizando **`git checkout`**
 . Si deseas revertir varios commits, puedes utilizar **`git revert -n`**
-. Además, existe la opción de utilizar el comando **`git reset`**, aunque es una operación peligrosa. Al revertir cambios, se crean nuevos commits que deshacen los cambios realizados, y es importante recordar que siempre se puede volver a los cambios originales si es necesario. Se recomienda crear una nueva rama antes de realizar cambios importantes para poder revertirlos de manera segura si es necesario.
+
 . En el comando **`git reset`** podemos indicarle dos opciones: **`--hard`** y **`--soft`**, siendo la primera para eliminar todos los commits posteriores y la segunda para que el sistema que se eliminaron, pero en realidad sigue ahí.
 . Además, existe la opción de utilizar el comando **`git reset`**, aunque es una operación peligrosa. Al revertir cambios, se crean nuevos commits que deshacen los cambios realizados, y es importante recordar que siempre se puede volver a los cambios originales si es necesario. Se recomienda crear una nueva rama antes de realizar cambios importantes para poder revertirlos de manera segura si es necesario. Algunos tipos de git reset son los siguientes: `git reset --hard` vuelve a un punto en la historia y elimina todo lo que sigue, permitiendo eliminar permanentemente los cambios, `git reset --soft` regresa a un punto de la historia pero sin eliminar los cambios siguientes.  
+
 
 ### Flags para git 🏳️
 
 - **`git reset --soft`**: Permite volver hacia un commit anterior suponiendo que lo de más adelante "no existe".
 
 - **`git reset --hard`**: ⚠️ ¡¡¡PELIGROSO!!! ⚠️ Directamente dice que todo lo que le sigue al commit al que regresaste no existe, se pierde esa sección de la historia del branch.
+
 
 ### Repositorios remotos 🌐
 
@@ -142,7 +146,12 @@ El merge es el proceso de fusionar dos ramas en Git, normalmente la rama princip
 
 La gestión de ramas en Git permite trabajar en diferentes características de forma aislada sin interferir entre ellas. Esto se logra a través de la creación, eliminación, combinación y comparación de ramas. Además, la funcionalidad de etiquetado permite identificar y etiquetar versiones específicas del software. Para conocer las ramas existentes y la rama de trabajo local se puede utilizar el comando **`git branch`** el cual lo imprime en línea de comando.
 
-### Forks en control de versiones 🍴
+## Eliminar una rama local
+
+el comando para borrar ramas locales en git es **`git branch --delete <rama>`** o **`git branch -d <rama>`**.
+Podriamos eliminar una rama remota utilizando **`git push <remoto> delete <rama>`**
+
+## Forks en control de versiones 🍴
 
 Un fork en control de versiones es una copia independiente de un repositorio que se crea en una cuenta diferente de la original. Los forks son especialmente útiles para proyectos de código abierto, ya que permiten a los desarrolladores contribuir al proyecto sin necesidad de tener permisos de escritura en el repositorio original.
 
@@ -239,7 +248,7 @@ También podemos usar `git checkout <branch> -- <file>` para restaurar un archiv
 
 **`git log`** es un comando que se utiliza para mostrar el historial de confirmaciones en un repositorio. Muestra información detallada sobre cada confirmación, como el autor, la fecha y hora, y el mensaje de confirmación. También se pueden utilizar opciones para filtrar y ordenar las confirmaciones.
 
-Ambos comandos son útiles para realizar búsquedas y obtener información sobre el historial de un repositorio, lo que puede ayudar en la resolución de problemas y en la toma de decisiones sobre el desarrollo futuro.
+Ambos comandos son útiles para realizar búsquedas y obtener información sobre el historial de un repositorio, lo que puede ayudar en la resolución de problemas y en la toma de decisiones sobre el desarrollo futuro. el git log se puede tunear
 
 ### **Repositorios dentro de otros repositorios (Submódulos)**
 
@@ -251,7 +260,7 @@ Los submódulos en Git permiten mantener en un solo repositorio, múltiples subp
 **`git help --all`** lista todos los posibles comandos.
 **`git <comando> -help`** permite ver una lista de todas las opciones de un comando.
 
-### ¿Que son los tags? ��
+## ¿Que son los tags? ��
 
 - Los tags o etiquetas se parecen al mensaje del commit.
 - Son identificadores asociados a versiones especificas de un repositorio.
@@ -259,6 +268,7 @@ Los submódulos en Git permiten mantener en un solo repositorio, múltiples subp
 - Estos versionamientos pueden ser lanzamiento de software o marcar hitos importantes.
 
 ###Versiones
+
 > version Alpha: Es el punto mas bajo del sistema.
 
 > version Beta: Es el punto intermedio del producto (version semiestable).
@@ -303,14 +313,17 @@ Los submódulos en Git permiten mantener en un solo repositorio, múltiples subp
 - `git commit -m "Mensaje"`
 - `git diff <Archivo>`
 - `git diff <hash><Archivo>`
-- `git status`
 - `git branch <CurNombre><NuevoNombre>`
 - `git checkout <NombreDelBranch>`
 - `git checkout -b <NuevoNombre>`
+- `git status`
+
 
 ### Vídeo Informativo sobre git (explicacion completa) 🎥
 Si te intera saber mas sobre git y [¿Como Funciona git?](https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&cad=rja&uact=8&ved=2ahUKEwjawdTC9oP-AhWuEVkFHSwPB4sQtwJ6BAgLEAI&url=https%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3DjGehuhFhtnE&usg=AOvVaw3EzVfE049RTxvTijwZ3C9z)
 aqui te muestro un video util y completo.
+
+## Forks en control de versiones 🍴
 
 `git tag -s v1.0` (firma la creación de un tag)
 
