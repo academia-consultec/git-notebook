@@ -143,7 +143,7 @@ También podemos usar `git checkout <branch> -- <file>` para restaurar un archiv
 
 ## GIT blame
 
-**`git blame`** es un comando de Git que se utiliza para determinar qué usuario realizó cambios en qué parte del archivo y cuándo se realizaron esos cambios. Con este comando, se puede ver el historial de revisiones línea por línea y ver quién fue responsable de introducir cada cambio. Es especialmente útil para encontrar errores o problemas en un archivo específico y para determinar quién debe ser responsable de corregirlos. También se puede utilizar para entender el proceso de desarrollo de un archivo y cómo ha evolucionado con el tiempo.
+**`git blame`** es un comando de GIT que se utiliza para determinar qué usuario realizó cambios en qué parte del archivo y cuándo se realizaron esos cambios. Con este comando, se puede ver el historial de revisiones línea por línea y ver quién fue responsable de introducir cada cambio. Es especialmente útil para encontrar errores o problemas en un archivo específico y para determinar quién debe ser responsable de corregirlos. También se puede utilizar para entender el proceso de desarrollo de un archivo y cómo ha evolucionado con el tiempo.
 
 ## GIT grep y log
 
