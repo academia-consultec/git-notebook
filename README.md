@@ -189,7 +189,7 @@ Ambos comandos son útiles para realizar búsquedas y obtener información sobre
 
 Los submódulos en Git permiten mantener en un solo repositorio, múltiples subproyectos alojados en otros repositorios. Esto es útil cuando se quiere incluir un proyecto dentro de otro proyecto más grande, sin tener que copiar todo el código y mantener ambas copias separadas. Al usar submódulos, se puede mantener una referencia al repositorio original y permitir la actualización y la colaboración en ambos proyectos de manera más eficiente.
 
-## ¿Que son los tags?
+## ¿Que son los tags? ��
 - Los tags o etiquetas se parecen al mensaje del commit.
 - Son identificadores asociados a versiones especificas de un repositorio.
 - Debemos usarlas para versionamiento productivo.
@@ -205,6 +205,13 @@ Los submódulos en Git permiten mantener en un solo repositorio, múltiples subp
 > con **git tag** tenemos un identificador estatico.
 
 > podemos usar **git checkout tag** para llegar a un identificador del punto de la historia.
+
+- son identificadores asociados a versiones específicas de un repositorio
+- son utilizadas para marcar versiones importantes como el lanzamiento de un software
+- `git tag v1.0`
+- `git tag -s v1.0` (firma la creación de un tag)
+- `git push -tags`
+- `git show v1.0`
 
 ## Comandos para la creacion de un tag
 - **git tag v1.0** para asignar el tag.
@@ -340,6 +347,9 @@ fork permite experimentar con el código sin el temor de dañar el respositorio 
 ### Submodulos 
 
 - Los submodulos en git permiten incluir un repositorio de git dentro de otro repositorio git, como una subcarpeta
-- Es una forma de mantener y utilizar proyectos relacionados o independientes.
+
+- Es una forma de mantener y utilizar proyectos relacionados o independientes
+
 ## git rm --cached <archivo>
- dejar de segir los cambios en un archivo que git estaba versionando, pero sin eliminarlo del sistema operativo.
+ dejar de seguir los cambios en un archivo que git estaba versionando, pero sin eliminarlo del sistema operativo.
+
