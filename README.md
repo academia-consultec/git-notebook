@@ -71,7 +71,7 @@ Un repositorio remoto en Git es una versión de tu proyecto alojada en un servid
 - todas las refs estaran disponibles en el repositorio nuevo como una copia del original
 - obtendras todas las tags
 - obtendras todas las ramas
-- todas las ramas remotas estaran disponibles en el repositorio destiono
+- todas las ramas remotas estaran disponibles en el repositorio destiono.
 paso:
 - git clone --mirror <repositorio-fuente>
 - git remote set-url --push origin <repositori-destino>
