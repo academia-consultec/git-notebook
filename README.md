@@ -37,7 +37,7 @@ Para crear un repositorio y un commit en Git, se debe inicializar el repositorio
 
 Para verificar los cambios entre dos versiones de un archivo en Git, se debe utilizar el comando **`git diff`**
 . Este comando mostrará las diferencias entre el archivo actual y su última versión guardada o entre una versión específica del archivo y su versión actual.
-- Se puede agregar la bandera hash para comparar el archivo actual con una versión en especifico..
+- Se puede agregar la bandera hash para comparar el archivo actual con una versión en especifico.
 
 ## ¿Qué es el Staging y los Branch?
 
