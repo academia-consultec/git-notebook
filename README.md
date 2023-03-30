@@ -44,6 +44,12 @@ En Git hay varias formas de revertir cambios. Puedes revertir un commit específ
 . Si deseas revertir varios commits, puedes utilizar **`git revert -n`**
 . Además, existe la opción de utilizar el comando **`git reset`**, aunque es una operación peligrosa. Al revertir cambios, se crean nuevos commits que deshacen los cambios realizados, y es importante recordar que siempre se puede volver a los cambios originales si es necesario. Se recomienda crear una nueva rama antes de realizar cambios importantes para poder revertirlos de manera segura si es necesario.
 
+### Flags para git reset
+
+- git reset --soft: Permite volver hacia un commit anterior suponiendo que lo de mas adelanta "no existe".
+
+- git reset --hard: ¡¡¡PELIGROSO!!! Directamente dice que todo lo que le sigue al commit al que regresaste no existe, se pierde esa sección de la historia del branch.
+
 ## Repositorios remotos
 
 Un repositorio remoto en Git es una versión de tu proyecto alojada en un servidor remoto. Te permite colaborar con otros desarrolladores y mantener una copia segura de tu código en caso de pérdida o daño en tu computadora local. Para trabajar con repositorios remotos en Git, debes vincular tu repositorio local con el repositorio remoto mediante el comando **`git remote add`**
