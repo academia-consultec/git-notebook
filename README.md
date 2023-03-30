@@ -56,6 +56,12 @@ En Git hay varias formas de revertir cambios. Puedes revertir un commit específ
 . Si deseas revertir varios commits, puedes utilizar **`git revert -n`**
 . Además, existe la opción de utilizar el comando **`git reset`**, aunque es una operación peligrosa. Al revertir cambios, se crean nuevos commits que deshacen los cambios realizados, y es importante recordar que siempre se puede volver a los cambios originales si es necesario. Se recomienda crear una nueva rama antes de realizar cambios importantes para poder revertirlos de manera segura si es necesario.
 
+### Flags para git reset
+
+- git reset --soft: Permite volver hacia un commit anterior suponiendo que lo de mas adelanta "no existe".
+
+- git reset --hard: ¡¡¡PELIGROSO!!! Directamente dice que todo lo que le sigue al commit al que regresaste no existe, se pierde esa sección de la historia del branch.
+
 ## Repositorios remotos
 
 Un repositorio remoto en Git es una versión de tu proyecto alojada en un servidor remoto. Te permite colaborar con otros desarrolladores y mantener una copia segura de tu código en caso de pérdida o daño en tu computadora local. Para trabajar con repositorios remotos en Git, debes vincular tu repositorio local con el repositorio remoto mediante el comando **`git remote add`**
@@ -169,6 +175,7 @@ Ambos comandos son útiles para realizar búsquedas y obtener información sobre
 
 Los submódulos en Git permiten mantener en un solo repositorio, múltiples subproyectos alojados en otros repositorios. Esto es útil cuando se quiere incluir un proyecto dentro de otro proyecto más grande, sin tener que copiar todo el código y mantener ambas copias separadas. Al usar submódulos, se puede mantener una referencia al repositorio original y permitir la actualización y la colaboración en ambos proyectos de manera más eficiente.
 
+
 ## Comando Basicos de GIT
 
 - `git init`
@@ -181,3 +188,8 @@ Los submódulos en Git permiten mantener en un solo repositorio, múltiples subp
 - `git branch <CurNombre><NuevoNombre>`
 - `git checkout <NombreDelBranch>`
 - `git checkout -b <NuevoNombre>`
+
+## Video Informativo sobre git (explicacion completa)
+Si te intera saber mas sobre git y [¿Como Funciona git?](https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&cad=rja&uact=8&ved=2ahUKEwjawdTC9oP-AhWuEVkFHSwPB4sQtwJ6BAgLEAI&url=https%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3DjGehuhFhtnE&usg=AOvVaw3EzVfE049RTxvTijwZ3C9z)
+aqui te muestro un video util y completo.
+
