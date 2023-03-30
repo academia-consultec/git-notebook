@@ -1,6 +1,6 @@
 # git-notebook
 
-# Introducción a GIT
+# Introducción de GIT - Siempre listo 30 de marzo del 2023
 
 ## Contenido
 - [Sistemas de Control de versiones](#sistemas-de-control-de-versiones)
@@ -38,12 +38,7 @@ Para crear un repositorio y un commit en Git, se debe inicializar el repositorio
 Para verificar los cambios entre dos versiones de un archivo en Git, se debe utilizar el comando **`git diff`**
 . Este comando mostrará las diferencias entre el archivo actual y su última versión guardada o entre una versión específica del archivo y su versión actual.
 
-
-NOTA: Utiliza el comando **`git log`** para ver el historial del commit junto al id de cada commit
-
 ## ¿Qué es el Staging y los Branch? 🌲
-
-
 
 El Staging y las Branches son dos conceptos importantes en Git. El Staging permite preparar los cambios antes de realizar un commit, mientras que las Branches permiten organizar el trabajo en diferentes funcionalidades del proyecto sin afectar el trabajo de otros desarrolladores.
 
@@ -65,8 +60,7 @@ En Git hay varias formas de revertir cambios. Puedes revertir un commit específ
 
 - **`git reset --soft`**: Permite volver hacia un commit anterior suponiendo que lo de más adelante "no existe".
 
-- **`git reset --hard`**: ⚠️ ¡¡¡PELIGROSO!!! ⚠️ Directamente dice que todo lo que le sigue al commit al que regresaste no existe, se pierde esa sección de la historia del branch.
-
+- **`git reset --hard`**: ⚠️ ¡¡¡PELIGROSO!!! ⚠️ Directamente dice que todo lo que le sigue al commit al que regresaste no existe, se pierde esa sección de la historia del branch. 
 
 ## Repositorios remotos
 
