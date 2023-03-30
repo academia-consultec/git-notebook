@@ -2,6 +2,8 @@
 
 ## Introducción de GIT
 
+# Introducción de GIT - Siempre listo 30 de marzo del 2023
+
 ## Contenido
 - [Sistemas de Control de versiones](#sistemas-de-control-de-versiones)
 - [Que es GIT](#que-es-git)
@@ -39,6 +41,11 @@ Para verificar los cambios entre dos versiones de un archivo en Git, se debe uti
 . Este comando mostrará las diferencias entre el archivo actual y su última versión guardada o entre una versión específica del archivo y su versión actual.
 
 ### ¿Qué es el Staging y los Branch? 🌲
+
+NOTA: Utiliza el comando **`git log`** para ver el historial del commit junto al id de cada commit
+
+## ¿Qué es el Staging y los Branch? 🌲
+
 
 El Staging y las Branches son dos conceptos importantes en Git. El Staging permite preparar los cambios antes de realizar un commit, mientras que las Branches permiten organizar el trabajo en diferentes funcionalidades del proyecto sin afectar el trabajo de otros desarrolladores.
 
@@ -191,11 +198,7 @@ Ambos comandos son útiles para realizar búsquedas y obtener información sobre
 
 Los submódulos en Git permiten mantener en un solo repositorio, múltiples subproyectos alojados en otros repositorios. Esto es útil cuando se quiere incluir un proyecto dentro de otro proyecto más grande, sin tener que copiar todo el código y mantener ambas copias separadas. Al usar submódulos, se puede mantener una referencia al repositorio original y permitir la actualización y la colaboración en ambos proyectos de manera más eficiente.
 
-<<<<<<< HEAD
-### ¿Qué son los tags?
-=======
-## ¿Que son los tags? ��
->>>>>>> origin
+### ¿Que son los tags? ��
 - Los tags o etiquetas se parecen al mensaje del commit.
 - Son identificadores asociados a versiones especificas de un repositorio.
 - Debemos usarlas para versionamiento productivo.
@@ -212,9 +215,8 @@ Los submódulos en Git permiten mantener en un solo repositorio, múltiples subp
 
 > podemos usar **git checkout tag** para llegar a un identificador del punto de la historia.
 
-<<<<<<< HEAD
 ### Comandos para la creación de un tag
-=======
+
 - son identificadores asociados a versiones específicas de un repositorio
 - son utilizadas para marcar versiones importantes como el lanzamiento de un software
 - `git tag v1.0`
@@ -223,7 +225,7 @@ Los submódulos en Git permiten mantener en un solo repositorio, múltiples subp
 - `git show v1.0`
 
 ## Comandos para la creacion de un tag
->>>>>>> origin
+
 - **git tag v1.0** para asignar el tag.
 - **git tag -s v1.0** envia un parametro al comando para firmar los tags.
 - **git push -tags** para publicar los tags
@@ -253,6 +255,40 @@ aqui te muestro un video util y completo.
 
 git tag -s v1.0 (firma la creación de un tag)
 fork permite experimentar con el código sin el temor de dañar el respositorio original
+
+
+## Guia de como clonar un repositorio
+Partamos del punto en donde el dueño del repositorio remoto nos agregor como colaborador de ese repositorio y nos asignos los permisos necesarios.
+
+Pimer paso: Clonar
+
+	git clone https://github.com/academia-consultec/git-notebook.git
+
+Segundo paso: Creacion de una rama, se recomienda no trabajar en el main.
+
+	git branch documentacion/rm
+
+Tercer paso: Sincronizar el repositorio global con el remoto
+
+	git pull
+
+Cuarto paso: Editar el archivo README.md
+
+	nano README.md
+
+Quinto paso: Hacer commit
+
+	git add README.md
+	git commit -m "Edicion del README.md"
+	git status
+
+Sexto paso: Realizar el push
+
+	git push origin documentacion/rm
+
+
+
+
 
 ### Flujos de trabajo avanzados
 > Archivo **.gitignore**
@@ -398,3 +434,4 @@ git reset --soft eff544f # Te recuperará todos los cambios que tengas diferente
 git checkout master
 git merge eff544f # Fusionará en un nuevo commit la historia de master con el momento específico en el que vive eff544f
 ```
+
