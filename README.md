@@ -5,16 +5,16 @@
 # Introducción de GIT - Siempre listo 30 de marzo del 2023
 
 ## Contenido
-- [Sistemas de Control de versiones](#sistemas-de-control-de-versiones)
-- [Que es GIT](#que-es-git)
-- [Archivos de Texto y Binarios](#archivos-de-texto-y-binarios)
-- [Crear un repositorio y un commit](#crear-un-repositorio-y-un-commit)
-- [Verificar cambios entre archivos DIFF](#verificar-cambios-entre-archivos)
-- [Que es el Staging y los Branch](#que-es-el-staging-y-los-branch)
-- [Que es un Merge](#que-es-un-merge)
-- [Como volver en el tiempo](#como-volver-en-el-tiempo)
-- [Como revertir cambios](#como-revertir-cambios)
-- [Repositorios remotos](#repositorios-remotos)
+- [Sistemas de Control de versiones](#sistemas-de-control-de-versiones-)
+- [Que es GIT](#que-es-git-)
+- [Archivos de Texto y Binarios](#archivos-de-texto-y-binarios-)
+- [Crear un repositorio y un commit](#crear-un-repositorio-y-un-commit-)
+- [Verificar cambios entre archivos DIFF](#verificar-cambios-entre-archivos-)
+- [Que es el Staging y los Branch](#que-es-el-staging-y-los-branch-)
+- [Que es un Merge](#que-es-un-merge-)
+- [Como volver en el tiempo](#como-volver-en-el-tiempo-)
+- [Como revertir cambios](#como-revertir-cambios-)
+- [Repositorios remotos](#repositorios-remotos-)
 
 ### Sistemas de Control de versiones 📝
 
