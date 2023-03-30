@@ -116,6 +116,21 @@ Los tags en Git son identificadores asociados a versiones específicas de un rep
 
 **`README.md`** es un archivo importante que se utiliza para proporcionar información básica y contexto sobre un proyecto en un repositorio Git. Proporciona detalles útiles sobre el proyecto, como la descripción, los requisitos previos, las instrucciones de instalación y los ejemplos de uso. También se puede usar la función de edición en línea de GitHub para modificar el archivo **`README.md`** directamente en el navegador, lo que hace que la actualización sea fácil y rápida. En general, tener un buen archivo **`README.md`** puede ser muy útil para que los usuarios puedan entender rápidamente tu proyecto y comenzar a usarlo de manera efectiva.
 
+# Convenciones
+
+## Convenciones para comentar commit
+1. la oracion sea imperativa, resolver forma clara y precisa diga lo que deseamos alcanzar con el commit.
+3. limitar longitud del mensaje del commit.
+3. Agregar detalles de ser necesarios. Historias de usuarios
+4. incluir numero de tareas en el mensaje.
+5. usar verbos precisos como **fix**, **add**, **delete**, **feat** o muchos mas. La primera la palabra del commit debe dar a entender lo que se es>
+
+## Convenciones para el nombramiento de branchs
+- Utilizar nombres cortos y descriptivos.
+- Utilizar nombres minusculas separados por **guiones** o **barras diagonales**.
+- Utilizar prefijos para indicar el tipo de branch. se puede usar un **ID** como **master**, **release**, entre otros.
+- Evitar nombres genericos como **dev**, **feature**, **feature**, **nuevo**.
+
 ## Convenciones para comentar commits 👍
 
 Las convenciones para comentar commits son una práctica recomendada para que el historial de cambios en un repositorio sea más legible, comprensible y coherente. Se trata de establecer un formato y una estructura para los mensajes de los commits, de manera que se especifiquen de manera clara y concisa los cambios realizados y la razón de los mismos. Esto facilita la revisión de los cambios por parte de los miembros del equipo y ayuda a mantener un registro histórico completo de todas las modificaciones en el código. Algunas convenciones comunes incluyen el uso de un encabezado descriptivo, seguido de una descripción detallada de los cambios, el uso de palabras clave para identificar el tipo de cambio realizado (por ejemplo, "feat" para nuevas características, "fix" para correcciones de errores, etc.), y el uso de un límite de caracteres en el mensaje para evitar mensajes demasiado largos y desorganizados.
@@ -253,18 +268,6 @@ fork permite experimentar con el código sin el temor de dañar el respositorio 
 - Se utiliza para proporcionar informacion basica y contexto sobre un proyecto en un repositorio GIT.
 - se muestra en la pagina principal del proyecto, es la primera cosa que alguien vera al visitar el repositorio.
 
-### Convenciones para comentar commit
-1. la oracion sea imperativa, resolver forma clara y precisa diga lo que deseamos alcanzar con el commit.
-3. limitar longitud del mensaje del commit.
-3. Agregar detalles de ser necesarios. Historias de usuarios
-4. incluir numero de tareas en el mensaje.
-5. usar verbos precisos como **fix**, **add**, **delete**, **feat** o muchos mas. La primera la palabra del commit debe dar a entender lo que se esta haciendo con el commit.
-
-### Convenciones para el nombramiento de branchs
-- Utilizar nombres cortos y descriptivos.
-- Utilizar nombres minusculas separados por **guiones** o **barras diagonales**.
-- Utilizar prefijos para indicar el tipo de branch. se puede usar un **ID** como **master**, **release**, entre otros.
-- Evitar nombres genericos como **dev**, **feature**, **feature**, **nuevo**.
 
 ### Como documentar una solicitud de cambio
 - **El titulo** Debe ser breve y descriptivo del cambio que se propone.
