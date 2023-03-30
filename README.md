@@ -350,3 +350,6 @@ fork permite experimentar con el código sin el temor de dañar el respositorio 
 
 - Es una forma de mantener y utilizar proyectos relacionados o independientes
 
+## git rm --cached <archivo>
+ dejar de seguir los cambios en un archivo que git estaba versionando, pero sin eliminarlo del sistema operativo.
+
