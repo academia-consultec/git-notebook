@@ -202,6 +202,7 @@ Los submódulos en Git permiten mantener en un solo repositorio, múltiples subp
 - **git tag -s v1.0** envia un parametro al comando para firmar los tags.
 - **git push -tags** para publicar los tags
 - **git show v1.0** para mostrar informacion de un tag como si fuera un git log.
+
 ## Comandos para GIT fetch, pull y push
 - usamos **git fetch** descarga los cambios de un repositorio remoto a local.
 - usamos **git pull** combina automaticamente los cambios del repositorio remoto con la rama actual en tu repositorio actual.
