@@ -1,6 +1,7 @@
 # git-notebook
 
 # Introducción de GIT - Siempre listo 30 de marzo del 2023
+Este documento contiene información sobre la herramienta de GIT
 
 ## Contenido
 - [Sistemas de Control de versiones](#sistemas-de-control-de-versiones-)
@@ -110,7 +111,8 @@ Un fork en control de versiones es una copia independiente de un repositorio que
 
 ## ¿Qué son tags? 🏷️
 
-Los tags en Git son identificadores asociados a versiones específicas de un repositorio. Se utilizan para marcar versiones importantes y hitos en el desarrollo de un proyecto, y se crean con el comando `git tag`. Los tags se pueden compartir con otros usuarios a través de repositorios remotos y se pueden ver con los comandos `git tag` y `git show`.
+Los tags en Git son identificadores asociados a versiones específicas de un repositorio. Se utilizan para marcar versiones importantes y hitos en el desarrollo de un proyecto, y se crean con el comando `git tag`. Los tags se pueden compartir con otros usuarios a través de repositorios remotos y se pueden ver con los comandos `git tag` y `git show`. Para firmar la tag con las credenciales del usuario se utiliza el comando `git tag -s`.
+
 
 ## GIT fetch, pull y push 🔴🔵⚪ 
 
@@ -215,6 +217,8 @@ Los submódulos en Git permiten mantener en un solo repositorio, múltiples subp
 - Son identificadores asociados a versiones especificas de un repositorio.
 - Debemos usarlas para versionamiento productivo.
 - Estos versionamientos pueden ser lanzamiento de software o marcar hitos importantes.
+
+###Versiones
 > version Alpha: Es el punto mas bajo del sistema.
 
 > version Beta: Es el punto intermedio del producto (version semiestable).
@@ -298,7 +302,7 @@ Sexto paso: Realizar el push
 	git push origin documentacion/rm
 
 
-
+____________________________________________________________
 
 
 ### Flujos de trabajo avanzados
@@ -379,10 +383,12 @@ Sexto paso: Realizar el push
 
 - `git reflog` 
     	- muestra un historial detallado de todos los movimientos de la cabeza del repositorio, incluidos los movimientos realizados mediante reset o rebase
+
 ### Uso Avanzado del commint (amend)
 
    	- El comando git commit --amend se utuliza para modificar el commit anterior en case de que se haya olvidaado algún archivo o mensaje de confirmación, o para fusionar múltiples confirmaciones en una sola.
     	- Esto permite mantener la historia del proyecto más limpia y fácil de seguir
+
 ### Comandos Checkout y Blame
 
 - GIT checkout 
@@ -393,6 +399,7 @@ Sexto paso: Realizar el push
 - GIT blame
 
     - Muestra quien y cuando realizo los cambios en cada linea de un archivo determinado
+
 ### GIT Grep y Log
 
     `git grep`
