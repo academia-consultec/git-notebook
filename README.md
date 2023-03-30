@@ -1,6 +1,6 @@
 # git-notebook
 
-# Introducción de GIT
+# Introducción de GIT - Siempre listo 30 de marzo del 2023
 
 ## Contenido
 - [Sistemas de Control de versiones](#sistemas-de-control-de-versiones-)
@@ -48,15 +48,18 @@
 
 ## Sistemas de Control de versiones 📝
 
-Un sistema de control de versiones es una herramienta fundamental para el desarrollo de cualquier proyecto. Permite mantener un historial de cambios en los archivos, evitar la pérdida de datos, facilitar la colaboración en equipo y mejorar la gestión de cambios en el proyecto.
+Un sistema de control de versiones es una herramienta fundamental para el desarrollo de cualquier proyecto. Permite mantener un historial de cambios en los archivos,  
+evitar la pérdida de datos, facilitar la colaboración en equipo y mejorar la gestión de cambios en el proyecto.
 
 ## ¿Qué es GIT?
 
-Git es un sistema de control de versiones distribuido que se utiliza principalmente para el desarrollo de software. Permite controlar las diferentes versiones de un proyecto, trabajar en equipo de manera más eficiente y es muy flexible y personalizable.
+Git es un sistema de control de versiones distribuido que se utiliza principalmente para el desarrollo de software.  
+Permite controlar las diferentes versiones de un proyecto, trabajar en equipo de manera más eficiente y es muy flexible y personalizable.
 
 ## Archivos de Texto y Binarios 📄
 
-En Git se pueden manejar dos tipos de archivos: archivos de texto y archivos binarios. Ambos son manejados de la misma manera, creando una copia completa de cada archivo en cada commit, pero los archivos binarios son más grandes y consumen más espacio en disco que los archivos de texto.
+En Git se pueden manejar dos tipos de archivos: archivos de texto y archivos binarios. Ambos son manejados de la misma manera,  
+creando una copia completa de cada archivo en cada commit, pero los archivos binarios son más grandes y consumen más espacio en disco que los archivos de texto.
 
 ## Crear un repositorio y un commit 📦
 
@@ -67,22 +70,34 @@ Para crear un repositorio y un commit en Git, se debe inicializar el repositorio
 
 ## Verificar cambios entre archivos ‘DIFF’ 🔎
 
-Para verificar los cambios entre dos versiones de un archivo en Git, se debe utilizar el comando **`git diff`**
-. Este comando mostrará las diferencias entre el archivo actual y su última versión guardada o entre una versión específica del archivo y su versión actual.
+Para verificar los cambios entre dos versiones de un archivo en Git, se debe utilizar el comando **`git diff`**.  
+Este comando mostrará las diferencias entre el archivo actual y su última versión guardada o entre una versión específica del archivo y su versión actual.
+
+
+NOTA: Utiliza el comando **`git log`** para ver el historial del commit junto al id de cada commit
 
 ## ¿Qué es el Staging y los Branch? 🌲
 
-El Staging y las Branches son dos conceptos importantes en Git. El Staging permite preparar los cambios antes de realizar un commit, mientras que las Branches permiten organizar el trabajo en diferentes funcionalidades del proyecto sin afectar el trabajo de otros desarrolladores.
+
+El Staging y las Branches son dos conceptos importantes en Git. El Staging permite preparar los cambios antes de realizar un commit,  
+mientras que las Branches permiten organizar el trabajo en diferentes funcionalidades del proyecto sin afectar el trabajo de otros desarrolladores.
 
 ## ¿Qué es un Merge? 🤝
 
-El Merge en Git es el proceso de combinar dos o más ramas en una sola rama. Se utiliza comúnmente para integrar cambios realizados en Branches separadas en la rama principal del proyecto. El proceso de Merge implica cambiar a la rama de destino, ejecutar el comando de Merge, resolver conflictos (si es necesario) y crear un nuevo commit.
+El Merge en Git es el proceso de combinar dos o más ramas en una sola rama. Se utiliza comúnmente para integrar cambios realizados en Branches separadas en la rama principal del proyecto.  
+El proceso de Merge implica cambiar a la rama de destino, ejecutar el comando de Merge, resolver conflictos (si es necesario) y crear un nuevo commit.
 
 ## ¿Cómo volver en el tiempo? 🕧
 
-En Git hay varias formas de volver en el tiempo para acceder a versiones anteriores de un proyecto, como revertir un commit, cambiar al estado de un commit anterior, crear una nueva rama desde un commit anterior o utilizar el comando reset. Es importante recordar que al retroceder en el tiempo, los cambios realizados posteriormente se perderán, a menos que se hayan guardado en una rama o commit diferente, por lo que se recomienda crear ramas y commits nuevos regularmente para evitar perder trabajo importante.
+En Git hay varias formas de volver en el tiempo para acceder a versiones anteriores de un proyecto, como revertir un commit, cambiar al estado de un commit anterior, crear una nueva rama desde un commit anterior o utilizar el comando reset.  
+Es importante recordar que al retroceder en el tiempo, los cambios realizados posteriormente se perderán, a menos que se hayan guardado en una rama o commit diferente, por lo que se recomienda crear ramas y commits nuevos regularmente para evitar perder trabajo importante.
 
 ## ¿Cómo revertir cambios? ⏳
+
+En Git hay varias formas de revertir cambios. Puedes revertir un commit específico utilizando el comando **`git revert`**, o revertir un archivo a su versión anterior utilizando **`git checkout`**.  
+Si deseas revertir varios commits, puedes utilizar **`git revert -n`**. 
+Además, existe la opción de utilizar el comando **`git reset`**, aunque es una operación peligrosa. Al revertir cambios, se crean nuevos commits que deshacen los cambios realizados, 
+y es importante recordar que siempre se puede volver a los cambios originales si es necesario. Se recomienda crear una nueva rama antes de realizar cambios importantes para poder revertirlos de manera segura si es necesario.
 
 En Git hay varias formas de revertir cambios. Puedes revertir un commit específico utilizando el comando **`git revert`**, o revertir un archivo a su versión anterior utilizando **`git checkout`**
 . Si deseas revertir varios commits, puedes utilizar **`git revert -n`**
@@ -221,7 +236,7 @@ Ambos comandos son útiles para realizar búsquedas y obtener información sobre
 
 Los submódulos en Git permiten mantener en un solo repositorio, múltiples subproyectos alojados en otros repositorios. Esto es útil cuando se quiere incluir un proyecto dentro de otro proyecto más grande, sin tener que copiar todo el código y mantener ambas copias separadas. Al usar submódulos, se puede mantener una referencia al repositorio original y permitir la actualización y la colaboración en ambos proyectos de manera más eficiente.
 
-## ¿Que son los tags?
+## ¿Que son los tags? ��
 - Los tags o etiquetas se parecen al mensaje del commit.
 - Son identificadores asociados a versiones especificas de un repositorio.
 - Debemos usarlas para versionamiento productivo.
@@ -237,6 +252,13 @@ Los submódulos en Git permiten mantener en un solo repositorio, múltiples subp
 > con **git tag** tenemos un identificador estatico.
 
 > podemos usar **git checkout tag** para llegar a un identificador del punto de la historia.
+
+- son identificadores asociados a versiones específicas de un repositorio
+- son utilizadas para marcar versiones importantes como el lanzamiento de un software
+- `git tag v1.0`
+- `git tag -s v1.0` (firma la creación de un tag)
+- `git push -tags`
+- `git show v1.0`
 
 ## Comandos para la creacion de un tag
 - **git tag v1.0** para asignar el tag.
@@ -268,6 +290,40 @@ aqui te muestro un video util y completo.
 
 git tag -s v1.0 (firma la creación de un tag)
 fork permite experimentar con el código sin el temor de dañar el respositorio original
+
+
+## Guia de como clonar un repositorio
+Partamos del punto en donde el dueño del repositorio remoto nos agregor como colaborador de ese repositorio y nos asignos los permisos necesarios.
+
+Pimer paso: Clonar
+
+	git clone https://github.com/academia-consultec/git-notebook.git
+
+Segundo paso: Creacion de una rama, se recomienda no trabajar en el main.
+
+	git branch documentacion/rm
+
+Tercer paso: Sincronizar el repositorio global con el remoto
+
+	git pull
+
+Cuarto paso: Editar el archivo README.md
+
+	nano README.md
+
+Quinto paso: Hacer commit
+
+	git add README.md
+	git commit -m "Edicion del README.md"
+	git status
+
+Sexto paso: Realizar el push
+
+	git push origin documentacion/rm
+
+
+
+
 
 ### Flujos de trabajo avanzados
 > Archivo **.gitignore**
@@ -372,4 +428,44 @@ fork permite experimentar con el código sin el temor de dañar el respositorio 
 ### Submodulos 
 
 - Los submodulos en git permiten incluir un repositorio de git dentro de otro repositorio git, como una subcarpeta
-- Es una forma de mantener y utilizar proyectos relacionados o independientes.
+
+- Es una forma de mantener y utilizar proyectos relacionados o independientes
+
+## git rm --cached <archivo>
+ dejar de seguir los cambios en un archivo que git estaba versionando, pero sin eliminarlo del sistema operativo.
+
+# Git Reset y Reflog: úsese en caso de emergencia
+![](https://johngodlee.github.io/geotaster_git_workshop/img/geotaster_git_banner.png)
+
+## Git nunca olvida, git reflog
+Git guarda todos los cambios aunque decidas borrarlos, al borrar un cambio lo que estás haciendo sólo es actualizar la punta del branch, para gestionar éstas puntas existe un mecanismo llamado registros de referencia o reflogs.
+.
+La gestión de estos cambios es mediante los hash’es de referencia (o ref) que son apuntadores a los commits.
+.
+Los recoges registran cuándo se actualizaron las referencias de Git en el repositorio local (sólo en el local), por lo que si deseas ver cómo has modificado la historia puedes utilizar el comando:
+
+```
+git reflog
+```
+
+Muchos comandos de Git aceptan un parámetro para especificar una referencia o “ref”, que es un puntero a una confirmación sobre todo los comandos:
+
+- git checkout Puedes moverte sin realizar ningún cambio al commit exacto de la ref
+
+```
+git checkout eff544f
+```
+- git reset: Hará que el último commit sea el pasado por la ref, usar este comando sólo si sabes exactamente qué estás haciendo
+
+```
+git reset --hard eff544f # Perderá todo lo que se encuentra en staging y en el Working directory y se moverá el head al commit eff544f
+git reset --soft eff544f # Te recuperará todos los cambios que tengas diferentes al commit eff544f, los agregará al staging area y moverá el head al commit eff544f
+```
+
+- git merge: Puedes hacer merge de un commit en específico, funciona igual que con una branch, pero te hace el merge del estado específico del commit mandado
+
+```
+git checkout master
+git merge eff544f # Fusionará en un nuevo commit la historia de master con el momento específico en el que vive eff544f
+```
+
