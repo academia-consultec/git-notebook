@@ -306,3 +306,38 @@ fork permite experimentar con el código sin el temor de dañar el respositorio 
 - Son **submodulos**
 - Estos permiten incluir un repositorio git dentro de otro repositorio, como una subcarpeta
 - Si tenemos un **mono repositorio** quiero trabajar con la version de master.
+- **git submodule add https://github.com/chaconinc/DbConnector** una forma de añadir submodulos.
+
+### GIT Reset y Reflog
+
+- `git reset`
+	- Es un comando que permite mover la rama actual y la cabeza del repositorio a un commit anterior
+
+- `git reflog` 
+    	- muestra un historial detallado de todos los movimientos de la cabeza del repositorio, incluidos los movimientos realizados mediante reset o rebase
+### Uso Avanzado del commint (amend)
+
+   	- El comando git commit --amend se utuliza para modificar el commit anterior en case de que se haya olvidaado algún archivo o mensaje de confirmación, o para fusionar múltiples confirmaciones en una sola.
+    	- Esto permite mantener la historia del proyecto más limpia y fácil de seguir
+### Comandos Checkout y Blame
+
+- GIT checkout 
+
+    `git checkout -- <file>`
+    `git checkout <branch> -- <file>`
+
+- GIT blame
+
+    - Muestra quien y cuando realizo los cambios en cada linea de un archivo determinado
+### GIT Grep y Log
+
+    `git grep`
+       	- es un comando que se utiliza para buscar cadenas de terxto dentro de los archivos de un repositorio
+
+    `git log`
+       	- es un comando que se utiliza para mostrar el historial de confirmaciones en un repositorio
+
+### Submodulos 
+
+- Los submodulos en git permiten incluir un repositorio de git dentro de otro repositorio git, como una subcarpeta
+- Es una forma de mantener y utilizar proyectos relacionados o independientes.
