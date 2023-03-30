@@ -341,5 +341,6 @@ fork permite experimentar con el código sin el temor de dañar el respositorio 
 
 - Los submodulos en git permiten incluir un repositorio de git dentro de otro repositorio git, como una subcarpeta
 - Es una forma de mantener y utilizar proyectos relacionados o independientes.
-## git rm --cached <archivo>
- dejar de segir los cambios en un archivo que git estaba versionando, pero sin eliminarlo del sistema operativo.
+
+### git rm --cached <archivo>
+- dejar de seguir los cambios en un archivo que git estaba versionando, pero sin eliminarlo del sistema operativo.
