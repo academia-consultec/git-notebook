@@ -95,6 +95,11 @@ Los tags en Git son identificadores asociados a versiones específicas de un rep
  combina los cambios descargados con la rama actual en tu repositorio local y **`git push`**
  se utiliza para enviar los cambios locales al repositorio remoto.
 
+# Diferencias de GIT fetch y pull
+
+**`git fetch`** es el comando que le dice a tu git local que recupere la última información de los metadatos del original (aunque no hace ninguna transferencia de archivos.Es más bien como comprobar si hay algún cambio disponible). 
+**`git pull`** por otro lado hace eso Y trae (copia) esos cambios del repositorio remoto. 
+
 ## .gitignore
 
 **`.gitignore`** es un archivo que se utiliza para especificar los archivos y directorios que se deben ignorar en el control de versiones. Es útil para evitar agregar archivos generados automáticamente por tu aplicación o sistema de construcción al control de versiones, lo que puede llevar a conflictos innecesarios al fusionar ramas. Los patrones pueden incluir comodines y caracteres especiales para hacer coincidir nombres de archivo específicos o patrones de nombres de archivo. El archivo **`.gitignore`**se coloca en la raíz del directorio de tu repositorio Git.
@@ -177,4 +182,23 @@ Ambos comandos son útiles para realizar búsquedas y obtener información sobre
 Los submódulos en Git permiten mantener en un solo repositorio, múltiples subproyectos alojados en otros repositorios. Esto es útil cuando se quiere incluir un proyecto dentro de otro proyecto más grande, sin tener que copiar todo el código y mantener ambas copias separadas. Al usar submódulos, se puede mantener una referencia al repositorio original y permitir la actualización y la colaboración en ambos proyectos de manera más eficiente.
 
 
+<<<<<<< HEAD
+=======
+## Comando Basicos de GIT
+
+- `git init`
+- `git add <Archivo>`
+- `git add .`
+- `git commit -m "Mensaje"`
+- `git diff <Archivo>`
+- `git diff <hash><Archivo>`
+- `git status`
+- `git branch <CurNombre><NuevoNombre>`
+- `git checkout <NombreDelBranch>`
+- `git checkout -b <NuevoNombre>`
+
+## Video Informativo sobre git (explicacion completa)
+Si te intera saber mas sobre git y [¿Como Funciona git?](https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&cad=rja&uact=8&ved=2ahUKEwjawdTC9oP-AhWuEVkFHSwPB4sQtwJ6BAgLEAI&url=https%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3DjGehuhFhtnE&usg=AOvVaw3EzVfE049RTxvTijwZ3C9z)
+aqui te muestro un video util y completo.
+>>>>>>> main
 
