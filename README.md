@@ -2,6 +2,18 @@
 
 # Introducción de GIT
 
+## Contenido
+- [Sistemas de Control de versiones](#sistemas-de-control-de-versiones)
+- [Que es GIT](#que-es-git)
+- [Archivos de Texto y Binarios](#archivos-de-texto-y-binarios)
+- [Crear un repositorio y un commit](#crear-un-repositorio-y-un-commit)
+- [Verificar cambios entre archivos DIFF](#verificar-cambios-entre-archivos)
+- [Que es el Staging y los Branch](#que-es-el-staging-y-los-branch)
+- [Que es un Merge](#que-es-un-merge)
+- [Como volver en el tiempo](#como-volver-en-el-tiempo)
+- [Como revertir cambios](#como-revertir-cambios)
+- [Repositorios remotos](#repositorios-remotos)
+
 ## Sistemas de Control de versiones
 
 Un sistema de control de versiones es una herramienta fundamental para el desarrollo de cualquier proyecto. Permite mantener un historial de cambios en los archivos, evitar la pérdida de datos, facilitar la colaboración en equipo y mejorar la gestión de cambios en el proyecto.
@@ -88,7 +100,7 @@ Los tags en Git son identificadores asociados a versiones específicas de un rep
 
 Las convenciones para comentar commits son una práctica recomendada para que el historial de cambios en un repositorio sea más legible, comprensible y coherente. Se trata de establecer un formato y una estructura para los mensajes de los commits, de manera que se especifiquen de manera clara y concisa los cambios realizados y la razón de los mismos. Esto facilita la revisión de los cambios por parte de los miembros del equipo y ayuda a mantener un registro histórico completo de todas las modificaciones en el código. Algunas convenciones comunes incluyen el uso de un encabezado descriptivo, seguido de una descripción detallada de los cambios, el uso de palabras clave para identificar el tipo de cambio realizado (por ejemplo, "feat" para nuevas características, "fix" para correcciones de errores, etc.), y el uso de un límite de caracteres en el mensaje para evitar mensajes demasiado largos y desorganizados.
 
-## Convenciones para el nombramiento de banchs
+## Convenciones para el nombramiento de branchs
 
 Las convenciones para nombrar ramas en Git son una forma de estandarizar el nombre de las ramas de un proyecto, lo que facilita su comprensión y su uso por parte de los desarrolladores. Algunas de las convenciones más comunes son:
 
@@ -143,7 +155,7 @@ También podemos usar `git checkout <branch> -- <file>` para restaurar un archiv
 
 ## GIT blame
 
-**`git blame`** es un comando de Git que se utiliza para determinar qué usuario realizó cambios en qué parte del archivo y cuándo se realizaron esos cambios. Con este comando, se puede ver el historial de revisiones línea por línea y ver quién fue responsable de introducir cada cambio. Es especialmente útil para encontrar errores o problemas en un archivo específico y para determinar quién debe ser responsable de corregirlos. También se puede utilizar para entender el proceso de desarrollo de un archivo y cómo ha evolucionado con el tiempo.
+**`git blame`** es un comando de GIT que se utiliza para determinar qué usuario realizó cambios en qué parte del archivo y cuándo se realizaron esos cambios. Con este comando, se puede ver el historial de revisiones línea por línea y ver quién fue responsable de introducir cada cambio. Es especialmente útil para encontrar errores o problemas en un archivo específico y para determinar quién debe ser responsable de corregirlos. También se puede utilizar para entender el proceso de desarrollo de un archivo y cómo ha evolucionado con el tiempo.
 
 ## GIT grep y log
 
