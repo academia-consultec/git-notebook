@@ -158,6 +158,8 @@ GIT stash es un comando que permite guardar temporalmente los cambios realizados
 
 GIT cherry-pick es una herramienta que permite aplicar un commit específico de una rama a otra rama diferente, sin tener que realizar un merge completo entre ambas ramas. Esto es útil cuando se necesita incluir cambios específicos en una rama sin afectar el resto de la rama de destino. Para utilizar cherry-pick, se debe especificar el hash del commit que se desea aplicar y luego confirmar la operación.
 
+# Comandos de emergencia
+
 ## GIT reset y reflog 🔄
 
 En GIT, **`reset`** es un comando que permite mover la rama actual y la cabeza del repositorio a un commit anterior. Por otro lado, **`reflog`** muestra un historial detallado de todos los movimientos de la cabeza del repositorio, incluidos los movimientos realizados mediante reset o rebase. Ambos comandos son útiles para deshacer cambios no deseados o volver a versiones anteriores del código.
