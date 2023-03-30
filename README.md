@@ -156,3 +156,8 @@ Ambos comandos son útiles para realizar búsquedas y obtener información sobre
 ## **Repositorios dentro de otros repositorios (Submódulos)**
 
 Los submódulos en Git permiten mantener en un solo repositorio, múltiples subproyectos alojados en otros repositorios. Esto es útil cuando se quiere incluir un proyecto dentro de otro proyecto más grande, sin tener que copiar todo el código y mantener ambas copias separadas. Al usar submódulos, se puede mantener una referencia al repositorio original y permitir la actualización y la colaboración en ambos proyectos de manera más eficiente.
+
+## GIT tag
+**`git tag -s version`**es un comando que se utiliza para subir los tag
+**`git show version`** es un comando en el cual se pueden ver todas las etiquetas
+
