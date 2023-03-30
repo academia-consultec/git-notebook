@@ -211,7 +211,9 @@ Ambos comandos son útiles para realizar búsquedas y obtener información sobre
 
 Los submódulos en Git permiten mantener en un solo repositorio, múltiples subproyectos alojados en otros repositorios. Esto es útil cuando se quiere incluir un proyecto dentro de otro proyecto más grande, sin tener que copiar todo el código y mantener ambas copias separadas. Al usar submódulos, se puede mantener una referencia al repositorio original y permitir la actualización y la colaboración en ambos proyectos de manera más eficiente.
 
+
 ### ¿Que son los tags? ��
+
 - Los tags o etiquetas se parecen al mensaje del commit.
 - Son identificadores asociados a versiones especificas de un repositorio.
 - Debemos usarlas para versionamiento productivo.
@@ -246,7 +248,9 @@ Los submódulos en Git permiten mantener en un solo repositorio, múltiples subp
 - **git push -tags** para publicar los tags
 - **git show v1.0** para mostrar informacion de un tag como si fuera un git log.
 
+
 ### Comandos para git fetch, pull y push
+
 - usamos **git fetch** descarga los cambios de un repositorio remoto a local.
 - usamos **git pull** combina automaticamente los cambios del repositorio remoto con la rama actual en tu repositorio actual.
 - usamos **git push** se usa para enviar cambios en la rama actual de tu repositorio local al repositorio remoto.
@@ -270,7 +274,6 @@ aqui te muestro un video util y completo.
 
 git tag -s v1.0 (firma la creación de un tag)
 fork permite experimentar con el código sin el temor de dañar el respositorio original
-
 
 ## Guia de como clonar un repositorio
 Partamos del punto en donde el dueño del repositorio remoto nos agregor como colaborador de ese repositorio y nos asignos los permisos necesarios.
@@ -300,10 +303,6 @@ Quinto paso: Hacer commit
 Sexto paso: Realizar el push
 
 	git push origin documentacion/rm
-
-
-____________________________________________________________
-
 
 ### Flujos de trabajo avanzados
 > Archivo **.gitignore**
@@ -387,11 +386,8 @@ ____________________________________________________________
 ### Uso Avanzado del commint (amend)
 
    	- El comando git commit --amend se utuliza para modificar el commit anterior en case de que se haya olvidaado algún archivo o mensaje de confirmación, o para fusionar múltiples confirmaciones en una sola.
-<<<<<<< HEAD
+
     	- Esto permite mantener la historia del proyecto más limpia y fácil de seguir.
-=======
-    	- Esto permite mantener la historia del proyecto más limpia y fácil de seguir
->>>>>>> origin
 
 ### Comandos Checkout y Blame
 
@@ -403,12 +399,8 @@ ____________________________________________________________
 - git blame
 
     - Muestra quien y cuando realizo los cambios en cada linea de un archivo determinado
-<<<<<<< HEAD
-### git grep y log
-=======
 
-### GIT Grep y Log
->>>>>>> origin
+### git grep y log
 
     `git grep`
        	- es un comando que se utiliza para buscar cadenas de terxto dentro de los archivos de un repositorio
