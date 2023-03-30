@@ -323,10 +323,12 @@ fork permite experimentar con el código sin el temor de dañar el respositorio 
 
 - `git reflog` 
     	- muestra un historial detallado de todos los movimientos de la cabeza del repositorio, incluidos los movimientos realizados mediante reset o rebase
+
 ### Uso Avanzado del commint (amend)
 
    	- El comando git commit --amend se utuliza para modificar el commit anterior en case de que se haya olvidaado algún archivo o mensaje de confirmación, o para fusionar múltiples confirmaciones en una sola.
     	- Esto permite mantener la historia del proyecto más limpia y fácil de seguir
+
 ### Comandos Checkout y Blame
 
 - GIT checkout 
@@ -337,6 +339,7 @@ fork permite experimentar con el código sin el temor de dañar el respositorio 
 - GIT blame
 
     - Muestra quien y cuando realizo los cambios en cada linea de un archivo determinado
+
 ### GIT Grep y Log
 
     `git grep`
