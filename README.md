@@ -1,6 +1,7 @@
 # git-notebook
 
 # Introducción de GIT - Siempre listo 30 de marzo del 2023
+Este documento contiene información sobre la herramienta de GIT
 
 ## Contenido
 - [Sistemas de Control de versiones](#sistemas-de-control-de-versiones-)
