@@ -5,15 +5,46 @@ Este documento contiene información sobre la herramienta de GIT
 
 ## Contenido
 - [Sistemas de Control de versiones](#sistemas-de-control-de-versiones-)
-- [Que es GIT](#que-es-git-)
+- [Que es GIT](#qué-es-git)
 - [Archivos de Texto y Binarios](#archivos-de-texto-y-binarios-)
 - [Crear un repositorio y un commit](#crear-un-repositorio-y-un-commit-)
-- [Verificar cambios entre archivos DIFF](#verificar-cambios-entre-archivos-)
-- [Que es el Staging y los Branch](#que-es-el-staging-y-los-branch-)
-- [Que es un Merge](#que-es-un-merge-)
-- [Como volver en el tiempo](#como-volver-en-el-tiempo-)
-- [Como revertir cambios](#como-revertir-cambios-)
+- [Verificar cambios entre archivos DIFF](#verificar-cambios-entre-archivos-diff-)
+- [¿Que es el Staging y los Branch?](#qué-es-el-staging-y-los-branch-)
+- [¿Que es un Merge?](#qué-es-un-merge-)
+- [¿Como volver en el tiempo?](#cómo-volver-en-el-tiempo-)
+- [¿Como revertir cambios?](#cómo-revertir-cambios-)
 - [Repositorios remotos](#repositorios-remotos-)
+- [Peticiones de cambios](#peticiones-de-cambios-)
+- [Merge entre ramas y resolución de conflictos](#merge-entre-ramas-y-resolucion-de-conflictos-)
+- [Gestión de ramas](#gestión-de-ramas)
+- [Forks en control de versiones](#forks-en-control-de-versiones-)
+- [¿Qué son tags?](#que-son-tags-)
+- [GIT fetch, pull y push](#git-fetch-pull-y-push-)
+- [Diferencias de GIT fetch y pull](#diferencias-de-git-fetch-y-pull)
+- [.gitignore](#gitignore)
+- [README.md](#readmemd-)
+- [Convenciones para comentar commits](#convenciones-para-comentar-commits-)
+- [Cómo documentar una solicitud de cambio](#como-documentar-una-solicitud-de-cambio-)
+- [¿Qué es el CODE REVIEW?](#que-es-el-code-review-)
+- [GIT clean y rebase](#git-clean-y-rebase-)
+- [GIT stash](#git-stash-)
+- [GIT cherry-pick](#git-cherry-pick-)
+- [GIT reset y reflog](#git-reset-y-reflog-)
+- [Uso avanzado del commit (amend)](#uso-avanzado-del-commit-amend)
+- [Uso avanzado de checkout](#uso-avanzado-de-checkout)
+- [GIT blame](#git-blame-)
+- [GIT grep y log](#git-grep-y-log-)
+- [Repositorios dentro de otros repositorios (Submódulos)](#repositorios-dentro-de-otros-repositorios-submódulos)
+- [¿Que son los tags?](#que-son-los-tags)
+- [Comandos para la creacion de un tag](#comandos-para-la-creacion-de-un-tag)
+- [Comandos para GIT fetch, pull y push](#comandos-para-git-fetch-pull-y-push)
+- [Comando Basicos de GIT](#comandos-basicos-de-git)
+- [Video Informativo sobre git (explicacion completa)](#video-informativo-sobre-git-explicacion-completa-)
+- [GIT Reset y Reflog](#git-reset-y-reflog)
+- [Uso Avanzado del commit (amend)](#uso-avanzado-del-commint-amend)
+- [Comandos Checkout y Blame](#comandos-checkout-y-blame)
+- [GIT Grep y Log](#git-grep-y-log)
+- [Submodulos](#submodulos)
 
 ## Sistemas de Control de versiones 📝
 
@@ -39,9 +70,9 @@ Para crear un repositorio y un commit en Git, se debe inicializar el repositorio
 
 ## Verificar cambios entre archivos ‘DIFF’ 🔎
 
-Para verificar los cambios entre dos versiones de un archivo en Git, se debe utilizar el comando **`git diff`**.  
-Este comando mostrará las diferencias entre el archivo actual y su última versión guardada o entre una versión específica del archivo y su versión actual.
-
+Para verificar los cambios entre dos versiones de un archivo en Git, se debe utilizar el comando **`git diff`**
+. Este comando mostrará las diferencias entre el archivo actual y su última versión guardada o entre una versión específica del archivo y su versión actual.
+- Se puede agregar la bandera hash para comparar el archivo actual con una versión en especifico.
 
 NOTA: Utiliza el comando **`git log`** para ver el historial del commit junto al id de cada commit
 
@@ -70,6 +101,8 @@ y es importante recordar que siempre se puede volver a los cambios originales si
 
 En Git hay varias formas de revertir cambios. Puedes revertir un commit específico utilizando el comando **`git revert`**, o revertir un archivo a su versión anterior utilizando **`git checkout`**
 . Si deseas revertir varios commits, puedes utilizar **`git revert -n`**
+. Además, existe la opción de utilizar el comando **`git reset`**, aunque es una operación peligrosa. Al revertir cambios, se crean nuevos commits que deshacen los cambios realizados, y es importante recordar que siempre se puede volver a los cambios originales si es necesario. Se recomienda crear una nueva rama antes de realizar cambios importantes para poder revertirlos de manera segura si es necesario.
+. En el comando **`git reset`** podemos indicarle dos opciones: **`--hard`** y **`--soft`**, siendo la primera para eliminar todos los commits posteriores y la segunda para que el sistema que se eliminaron, pero en realidad sigue ahí.
 . Además, existe la opción de utilizar el comando **`git reset`**, aunque es una operación peligrosa. Al revertir cambios, se crean nuevos commits que deshacen los cambios realizados, y es importante recordar que siempre se puede volver a los cambios originales si es necesario. Se recomienda crear una nueva rama antes de realizar cambios importantes para poder revertirlos de manera segura si es necesario. Algunos tipos de git reset son los siguientes: `git reset --hard` vuelve a un punto en la historia y elimina todo lo que sigue, permitiendo eliminar permanentemente los cambios, `git reset --soft` regresa a un punto de la historia pero sin eliminar los cambios siguientes.  
 
 ### Flags para git 🏳️
@@ -269,7 +302,7 @@ Los submódulos en Git permiten mantener en un solo repositorio, múltiples subp
 Si te intera saber mas sobre git y [¿Como Funciona git?](https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&cad=rja&uact=8&ved=2ahUKEwjawdTC9oP-AhWuEVkFHSwPB4sQtwJ6BAgLEAI&url=https%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3DjGehuhFhtnE&usg=AOvVaw3EzVfE049RTxvTijwZ3C9z)
 aqui te muestro un video util y completo.
 
-git tag -s v1.0 (firma la creación de un tag)
+`git tag -s v1.0` (firma la creación de un tag)
 
 fork permite experimentar con el código sin el temor de dañar el respositorio original
 
@@ -453,5 +486,4 @@ git merge eff544f # Fusionará en un nuevo commit la historia de master con el m
 
 	• Utilizar nombres cortos y descriptivos
 	• Utilizar nombres en minuscula separados por guiones o barra diagonal
-	• Utilizar prefijos
-Evitar nombres genericos
+	• Utilizar prefijos, Evitar nombres genericos
