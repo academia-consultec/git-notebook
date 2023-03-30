@@ -2,6 +2,18 @@
 
 # Introducción de GIT
 
+## Contenido
+- [Sistemas de Control de versiones](#sistemas-de-control-de-versiones)
+- [Que es GIT](#que-es-git)
+- [Archivos de Texto y Binarios](#archivos-de-texto-y-binarios)
+- [Crear un repositorio y un commit](#crear-un-repositorio-y-un-commit)
+- [Verificar cambios entre archivos DIFF](#verificar-cambios-entre-archivos)
+- [Que es el Staging y los Branch](#que-es-el-staging-y-los-branch)
+- [Que es un Merge](#que-es-un-merge)
+- [Como volver en el tiempo](#como-volver-en-el-tiempo)
+- [Como revertir cambios](#como-revertir-cambios)
+- [Repositorios remotos](#repositorios-remotos)
+
 ## Sistemas de Control de versiones
 
 Un sistema de control de versiones es una herramienta fundamental para el desarrollo de cualquier proyecto. Permite mantener un historial de cambios en los archivos, evitar la pérdida de datos, facilitar la colaboración en equipo y mejorar la gestión de cambios en el proyecto.
@@ -43,6 +55,12 @@ En Git hay varias formas de volver en el tiempo para acceder a versiones anterio
 En Git hay varias formas de revertir cambios. Puedes revertir un commit específico utilizando el comando **`git revert`**, o revertir un archivo a su versión anterior utilizando **`git checkout`**
 . Si deseas revertir varios commits, puedes utilizar **`git revert -n`**
 . Además, existe la opción de utilizar el comando **`git reset`**, aunque es una operación peligrosa. Al revertir cambios, se crean nuevos commits que deshacen los cambios realizados, y es importante recordar que siempre se puede volver a los cambios originales si es necesario. Se recomienda crear una nueva rama antes de realizar cambios importantes para poder revertirlos de manera segura si es necesario.
+
+### Flags para git reset
+
+- git reset --soft: Permite volver hacia un commit anterior suponiendo que lo de mas adelanta "no existe".
+
+- git reset --hard: ¡¡¡PELIGROSO!!! Directamente dice que todo lo que le sigue al commit al que regresaste no existe, se pierde esa sección de la historia del branch.
 
 ## Repositorios remotos
 
@@ -161,3 +179,22 @@ Ambos comandos son útiles para realizar búsquedas y obtener información sobre
 ## **Repositorios dentro de otros repositorios (Submódulos)**
 
 Los submódulos en Git permiten mantener en un solo repositorio, múltiples subproyectos alojados en otros repositorios. Esto es útil cuando se quiere incluir un proyecto dentro de otro proyecto más grande, sin tener que copiar todo el código y mantener ambas copias separadas. Al usar submódulos, se puede mantener una referencia al repositorio original y permitir la actualización y la colaboración en ambos proyectos de manera más eficiente.
+
+
+## Comando Basicos de GIT
+
+- `git init`
+- `git add <Archivo>`
+- `git add .`
+- `git commit -m "Mensaje"`
+- `git diff <Archivo>`
+- `git diff <hash><Archivo>`
+- `git status`
+- `git branch <CurNombre><NuevoNombre>`
+- `git checkout <NombreDelBranch>`
+- `git checkout -b <NuevoNombre>`
+
+## Video Informativo sobre git (explicacion completa)
+Si te intera saber mas sobre git y [¿Como Funciona git?](https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&cad=rja&uact=8&ved=2ahUKEwjawdTC9oP-AhWuEVkFHSwPB4sQtwJ6BAgLEAI&url=https%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3DjGehuhFhtnE&usg=AOvVaw3EzVfE049RTxvTijwZ3C9z)
+aqui te muestro un video util y completo.
+
