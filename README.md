@@ -96,7 +96,7 @@ La gestión de ramas en Git permite trabajar en diferentes características de f
 el comando para borrar ramas locales en git es **`git branch --delete <rama>`** o **`git branch -d <rama>`**.
 Podriamos eliminar una rama remota utilizando **`git push <remoto> delete <rama>`**
 
-## Forks en control de versiones
+## Forks en control de versiones 🍴
 
 Un fork en control de versiones es una copia independiente de un repositorio que se crea en una cuenta diferente de la original. Los forks son especialmente útiles para proyectos de código abierto, ya que permiten a los desarrolladores contribuir al proyecto sin necesidad de tener permisos de escritura en el repositorio original.
 
@@ -196,7 +196,7 @@ Ambos comandos son útiles para realizar búsquedas y obtener información sobre
 
 Los submódulos en Git permiten mantener en un solo repositorio, múltiples subproyectos alojados en otros repositorios. Esto es útil cuando se quiere incluir un proyecto dentro de otro proyecto más grande, sin tener que copiar todo el código y mantener ambas copias separadas. Al usar submódulos, se puede mantener una referencia al repositorio original y permitir la actualización y la colaboración en ambos proyectos de manera más eficiente.
 
-## ¿Que son los tags?
+## ¿Que son los tags? ��
 
 - Los tags o etiquetas se parecen al mensaje del commit.
 - Son identificadores asociados a versiones especificas de un repositorio.
@@ -240,6 +240,7 @@ Los submódulos en Git permiten mantener en un solo repositorio, múltiples subp
 - `git checkout <NombreDelBranch>`
 - `git checkout -b <NuevoNombre>`
 - `git status`
+
 
 ## Video Informativo sobre git (explicacion completa) 🎥
 
