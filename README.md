@@ -78,7 +78,7 @@ El merge es el proceso de fusionar dos ramas en Git, normalmente la rama princip
 
 ## Gestión de ramas
 
-La gestión de ramas en Git permite trabajar en diferentes características de forma aislada sin interferir entre ellas. Esto se logra a través de la creación, eliminación, combinación y comparación de ramas. Además, la funcionalidad de etiquetado permite identificar y etiquetar versiones específicas del software.
+La gestión de ramas en Git permite trabajar en diferentes características de forma aislada sin interferir entre ellas. Esto se logra a través de la creación, eliminación, combinación y comparación de ramas. Además, la funcionalidad de etiquetado permite identificar y etiquetar versiones específicas del software. Para conocer las ramas existentes y la rama de trabajo local se puede utilizar el comando **`git branch`** el cual lo imprime en línea de comando.
 
 ## Forks en control de versiones
 
