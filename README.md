@@ -224,3 +224,7 @@ Los submódulos en Git permiten mantener en un solo repositorio, múltiples subp
 ## Video Informativo sobre git (explicacion completa)
 Si te intera saber mas sobre git y [¿Como Funciona git?](https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&cad=rja&uact=8&ved=2ahUKEwjawdTC9oP-AhWuEVkFHSwPB4sQtwJ6BAgLEAI&url=https%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3DjGehuhFhtnE&usg=AOvVaw3EzVfE049RTxvTijwZ3C9z)
 aqui te muestro un video util y completo.
+
+git tag -s v1.0 (firma la creación de un tag)
+fork permite experimentar con el código sin el temor de dañar el respositorio original
+
