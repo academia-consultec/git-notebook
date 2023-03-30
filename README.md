@@ -189,7 +189,7 @@ Ambos comandos son útiles para realizar búsquedas y obtener información sobre
 
 Los submódulos en Git permiten mantener en un solo repositorio, múltiples subproyectos alojados en otros repositorios. Esto es útil cuando se quiere incluir un proyecto dentro de otro proyecto más grande, sin tener que copiar todo el código y mantener ambas copias separadas. Al usar submódulos, se puede mantener una referencia al repositorio original y permitir la actualización y la colaboración en ambos proyectos de manera más eficiente.
 
-## ¿Que son los tags? ����
+## ¿Que son los tags? ��
 - Los tags o etiquetas se parecen al mensaje del commit.
 - Son identificadores asociados a versiones especificas de un repositorio.
 - Debemos usarlas para versionamiento productivo.
@@ -244,15 +244,85 @@ aqui te muestro un video util y completo.
 git tag -s v1.0 (firma la creación de un tag)
 fork permite experimentar con el código sin el temor de dañar el respositorio original
 
+### Flujos de trabajo avanzados
+> Archivo **.gitignore**
+- Esto es especialmente util cuando tienes archivos que son generados automaticamente por tu aplicacion, como archivos de registro o archivos cache.
+- Agregar estos archivos al control de versiones no es util y puede llevar a conflictos innecesarios al fusionar ramas.
 
-## GIT Reset y Reflog
+> Archivo **README.md**
+- Se utiliza para proporcionar informacion basica y contexto sobre un proyecto en un repositorio GIT.
+- se muestra en la pagina principal del proyecto, es la primera cosa que alguien vera al visitar el repositorio.
+
+### Convenciones para comentar commit
+1. la oracion sea imperativa, resolver forma clara y precisa diga lo que deseamos alcanzar con el commit.
+3. limitar longitud del mensaje del commit.
+3. Agregar detalles de ser necesarios. Historias de usuarios
+4. incluir numero de tareas en el mensaje.
+5. usar verbos precisos como **fix**, **add**, **delete**, **feat** o muchos mas. La primera la palabra del commit debe dar a entender lo que se esta haciendo con el commit.
+
+### Convenciones para el nombramiento de branchs
+- Utilizar nombres cortos y descriptivos.
+- Utilizar nombres minusculas separados por **guiones** o **barras diagonales**.
+- Utilizar prefijos para indicar el tipo de branch. se puede usar un **ID** como **master**, **release**, entre otros.
+- Evitar nombres genericos como **dev**, **feature**, **feature**, **nuevo**.
+
+### Como documentar una solicitud de cambio
+- **El titulo** Debe ser breve y descriptivo del cambio que se propone.
+    - Colocar el identificador de la historia, titulo de la historia, lenguaje usado.
+- **Descripcion** Se proporciona una descripcion detallada de lo que se espera que resuelva y los motive detras del cambio.
+- **Capturas de pantalla** Proporcione capturas para ilustrar los cambios propuestos.
+
+### CODE REVIEW
+- Parte importante del proceso de desarrollo de software.
+- verificamos punto de mejora, estandares y calidad.
+- se revisa funcionalidades.
+- permite compartir conocimientos y experiencias.
+- **Donde todos nos hacemos responsables del proyecto de un compañero**
+- Se recomienda que se haga de forma apares, el dueño del codigo y el que revisa.
+
+### GIT CLEAN y GIT REBASE
+> **Clean** Comando que se utiliza para eliminar el archivo no rastreado en un directorio de trabajo local. aproximadamente lo que hace el **rm** en Shell Script.
+
+> **Rebase** Se usa para integrar cambios de una rama a otra de una manera mas ordenada y lineal.
+
+> **statsh** Este guarda tempralmente los cambios en un estado intermedio para que puedas trabajar en otra cosa sin tener que hacer commits de los cambios actuales. **pop** pone el ultimo **apply** los pone todos.
+
+### Comandos de emergencias
+- **reset** Es un comando que permite mover la rama actual y la cabeza del repositorio a un commit anterior.
+- **reflog** Muestra un historial detallado de todos los movimientos de la cabeza del repositorio.
+
+### Uso avanzado del commit (amend)
+- el comando **git commit --amend** se usa para modificar el commit anterior en caso de que se haya olvidado alguin archivo o mensaje de confirmacion o para fusionar multiples confirmaciones en una sola.
+
+### uso avanzado del checkout
+- al usar **git checkout -- archivo**, podemos descartar los cambios de un archivo y volver a la ultima version guardada.
+- Tambien podemos usar **git checkout branch -- file** para restaurar un archivo de una rama especifica en nuestra rama actual.
+- la bandera **--** es un checkout de emergencia.
+
+### GIT BLAME
+- Muestra quien y cuando realizo cambiios en cada linea de un archivo determinado.
+
+### GIT GREP
+- Es un comando que se utiliza para buscar cadenas de texto dentro de los archivos de un repositorio.
+- Buscar en funcion de la salida de un comando de salida. como el resultado de un git log, todos los commit de una persona por ejemplo.
+
+### GIT LOG
+- Es un comando que se utiliza para mostrar el historial de confirmacion en un repositorio.
+
+### Repositorio dentro de otro repositorio
+- Son **submodulos**
+- Estos permiten incluir un repositorio git dentro de otro repositorio, como una subcarpeta
+- Si tenemos un **mono repositorio** quiero trabajar con la version de master.
+- **git submodule add https://github.com/chaconinc/DbConnector** una forma de añadir submodulos.
+
+### GIT Reset y Reflog
 
 - `git reset`
 	- Es un comando que permite mover la rama actual y la cabeza del repositorio a un commit anterior
 
 - `git reflog` 
     	- muestra un historial detallado de todos los movimientos de la cabeza del repositorio, incluidos los movimientos realizados mediante reset o rebase
-## Uso Avanzado del commint (amend)
+### Uso Avanzado del commint (amend)
 
    	- El comando git commit --amend se utuliza para modificar el commit anterior en case de que se haya olvidaado algún archivo o mensaje de confirmación, o para fusionar múltiples confirmaciones en una sola.
     	- Esto permite mantener la historia del proyecto más limpia y fácil de seguir
@@ -277,6 +347,6 @@ fork permite experimentar con el código sin el temor de dañar el respositorio 
 ### Submodulos 
 
 - Los submodulos en git permiten incluir un repositorio de git dentro de otro repositorio git, como una subcarpeta
-- Es una forma de mantener y utilizar proyectos relacionados o independientes
 
+- Es una forma de mantener y utilizar proyectos relacionados o independientes
 
