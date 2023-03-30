@@ -199,6 +199,8 @@ Los submódulos en Git permiten mantener en un solo repositorio, múltiples subp
 - Son identificadores asociados a versiones especificas de un repositorio.
 - Debemos usarlas para versionamiento productivo.
 - Estos versionamientos pueden ser lanzamiento de software o marcar hitos importantes.
+
+###Versiones
 > version Alpha: Es el punto mas bajo del sistema.
 
 > version Beta: Es el punto intermedio del producto (version semiestable).
