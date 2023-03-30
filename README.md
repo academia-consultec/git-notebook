@@ -94,6 +94,11 @@ Los tags en Git son identificadores asociados a versiones específicas de un rep
  combina los cambios descargados con la rama actual en tu repositorio local y **`git push`**
  se utiliza para enviar los cambios locales al repositorio remoto.
 
+# Diferencias de GIT fetch y pull
+
+**`git fetch`** es el comando que le dice a tu git local que recupere la última información de los metadatos del original (aunque no hace ninguna transferencia de archivos.Es más bien como comprobar si hay algún cambio disponible). 
+**`git pull`** por otro lado hace eso Y trae (copia) esos cambios del repositorio remoto. 
+
 ## .gitignore
 
 **`.gitignore`** es un archivo que se utiliza para especificar los archivos y directorios que se deben ignorar en el control de versiones. Es útil para evitar agregar archivos generados automáticamente por tu aplicación o sistema de construcción al control de versiones, lo que puede llevar a conflictos innecesarios al fusionar ramas. Los patrones pueden incluir comodines y caracteres especiales para hacer coincidir nombres de archivo específicos o patrones de nombres de archivo. El archivo **`.gitignore`**se coloca en la raíz del directorio de tu repositorio Git.
