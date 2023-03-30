@@ -62,7 +62,6 @@ En Git hay varias formas de revertir cambios. Puedes revertir un commit específ
 
 - **`git reset --hard`**: ⚠️ ¡¡¡PELIGROSO!!! ⚠️ Directamente dice que todo lo que le sigue al commit al que regresaste no existe, se pierde esa sección de la historia del branch.
 
-- **`git reset --mixed`**: Permite volver hacia un commit anterior suponiendo que lo de más adelante "no existe", los cambios siguen en el working tree como uncommit + unstage.
 
 ## Repositorios remotos
 
