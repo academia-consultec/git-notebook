@@ -67,6 +67,15 @@ En Git hay varias formas de revertir cambios. Puedes revertir un commit específ
 Un repositorio remoto en Git es una versión de tu proyecto alojada en un servidor remoto. Te permite colaborar con otros desarrolladores y mantener una copia segura de tu código en caso de pérdida o daño en tu computadora local. Para trabajar con repositorios remotos en Git, debes vincular tu repositorio local con el repositorio remoto mediante el comando **`git remote add`**
 . Puedes enviar tus cambios locales al repositorio remoto utilizando **`git push`**, y descargar los cambios realizados en el repositorio remoto utilizando **`git fetch`**
 . Los repositorios remotos son esenciales para el trabajo colaborativo con Git.
+**git clone --mirror <repositorio-a-duplicar> <repositorio-donde-alojar-nuevo-repo>**
+- todas las refs estaran disponibles en el repositorio nuevo como una copia del original
+- obtendras todas las tags
+- obtendras todas las ramas
+- todas las ramas remotas estaran disponibles en el repositorio destiono
+paso:
+- git clone --mirror <repositorio-fuente>
+- git remote set-url --push origin <repositori-destino>
+- git push --mirror
 
 ## Peticiones de cambios
 
