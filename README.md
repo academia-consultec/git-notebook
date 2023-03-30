@@ -58,9 +58,9 @@ En Git hay varias formas de revertir cambios. Puedes revertir un commit específ
 
 ### Flags para git reset
 
-- **`git reset --soft`**: Permite volver hacia un commit anterior suponiendo que lo de más adelanta "no existe".
+- **`git reset --soft`**: Permite volver hacia un commit anterior suponiendo que lo de más adelante "no existe".
 
-- **`git reset --hard`**: **¡¡¡PELIGROSO!!!** Directamente dice que todo lo que le sigue al commit al que regresaste no existe, se pierde esa sección de la historia del branch.
+- **`git reset --hard`**: ⚠️ ¡¡¡PELIGROSO!!! ⚠️ Directamente dice que todo lo que le sigue al commit al que regresaste no existe, se pierde esa sección de la historia del branch.
 
 - **`git reset --mixed`**: Permite volver hacia un commit anterior suponiendo que lo de más adelante "no existe", los cambios siguen en el working tree como uncommit + unstage.
 
@@ -241,12 +241,12 @@ Los submódulos en Git permiten mantener en un solo repositorio, múltiples subp
 - `git checkout -b <NuevoNombre>`
 - `git status`
 
-## Video Informativo sobre git (explicacion completa)
+## Video Informativo sobre git (explicacion completa) 🎥
 
 Si te intera saber mas sobre git y [¿Como Funciona git?](https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&cad=rja&uact=8&ved=2ahUKEwjawdTC9oP-AhWuEVkFHSwPB4sQtwJ6BAgLEAI&url=https%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3DjGehuhFhtnE&usg=AOvVaw3EzVfE049RTxvTijwZ3C9z)
 aqui te muestro un video util y completo.
 
-## Fork
+## Forks en control de versiones 🍴
 
 Fork permite experimentar con el código sin el temor de dañar el respositorio original, consiste basicamente en tomar una copia de un codigo fuente creando un nuevo pedazo de software separado.
 
