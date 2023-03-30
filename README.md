@@ -180,6 +180,33 @@ Ambos comandos son útiles para realizar búsquedas y obtener información sobre
 
 Los submódulos en Git permiten mantener en un solo repositorio, múltiples subproyectos alojados en otros repositorios. Esto es útil cuando se quiere incluir un proyecto dentro de otro proyecto más grande, sin tener que copiar todo el código y mantener ambas copias separadas. Al usar submódulos, se puede mantener una referencia al repositorio original y permitir la actualización y la colaboración en ambos proyectos de manera más eficiente.
 
+## ¿Que son los tags?
+- Los tags o etiquetas se parecen al mensaje del commit.
+- Son identificadores asociados a versiones especificas de un repositorio.
+- Debemos usarlas para versionamiento productivo.
+- Estos versionamientos pueden ser lanzamiento de software o marcar hitos importantes.
+> version Alpha: Es el punto mas bajo del sistema.
+
+> version Beta: Es el punto intermedio del producto (version semiestable).
+
+> version release: de ellas se espera que esten mas cerca a produccion.
+
+> version 1.0: es la mas estable que se logra conseguir.
+
+> con **git tag** tenemos un identificador estatico.
+
+> podemos usar **git checkout tag** para llegar a un identificador del punto de la historia.
+
+## Comandos para la creacion de un tag
+- **git tag v1.0** para asignar el tag.
+- **git tag -s v1.0** envia un parametro al comando para firmar los tags.
+- **git push -tags** para publicar los tags
+- **git show v1.0** para mostrar informacion de un tag como si fuera un git log.
+
+## Comandos para GIT fetch, pull y push
+- usamos **git fetch** descarga los cambios de un repositorio remoto a local.
+- usamos **git pull** combina automaticamente los cambios del repositorio remoto con la rama actual en tu repositorio actual.
+- usamos **git push** se usa para enviar cambios en la rama actual de tu repositorio local al repositorio remoto.
 
 ## Comando Basicos de GIT
 
@@ -197,4 +224,3 @@ Los submódulos en Git permiten mantener en un solo repositorio, múltiples subp
 ## Video Informativo sobre git (explicacion completa)
 Si te intera saber mas sobre git y [¿Como Funciona git?](https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&cad=rja&uact=8&ved=2ahUKEwjawdTC9oP-AhWuEVkFHSwPB4sQtwJ6BAgLEAI&url=https%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3DjGehuhFhtnE&usg=AOvVaw3EzVfE049RTxvTijwZ3C9z)
 aqui te muestro un video util y completo.
-
