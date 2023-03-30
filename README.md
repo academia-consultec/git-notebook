@@ -275,6 +275,11 @@ Ambos comandos son útiles para realizar búsquedas y obtener información sobre
 
 Los submódulos en Git permiten mantener en un solo repositorio, múltiples subproyectos alojados en otros repositorios. Esto es útil cuando se quiere incluir un proyecto dentro de otro proyecto más grande, sin tener que copiar todo el código y mantener ambas copias separadas. Al usar submódulos, se puede mantener una referencia al repositorio original y permitir la actualización y la colaboración en ambos proyectos de manera más eficiente.
 
+## GIT HELP
+
+**`git help --all`** lista todos los posibles comandos.
+**`git <comando> -help`** permite ver una lista de todas las opciones de un comando.
+
 ## ¿Que son los tags? ��
 <<<<<<< HEAD
 =======
@@ -321,6 +326,7 @@ Los submódulos en Git permiten mantener en un solo repositorio, múltiples subp
 - usamos **git pull** combina automaticamente los cambios del repositorio remoto con la rama actual en tu repositorio actual.
 - usamos **git push** se usa para enviar cambios en la rama actual de tu repositorio local al repositorio remoto.
 
+
 ## Comando Basicos de GIT
 
 - `git init`
@@ -346,6 +352,7 @@ Fork permite experimentar con el código sin el temor de dañar el respositorio 
 
 =======
 `git tag -s v1.0` (firma la creación de un tag)
+
 fork permite experimentar con el código sin el temor de dañar el respositorio original
 >>>>>>> 4d89741d0533f847683bea06c23f2d04231b639f
 
@@ -525,3 +532,8 @@ git checkout master
 git merge eff544f # Fusionará en un nuevo commit la historia de master con el momento específico en el que vive eff544f
 ```
 
+## Convenciones para el nombramiento de branchs
+
+	• Utilizar nombres cortos y descriptivos
+	• Utilizar nombres en minuscula separados por guiones o barra diagonal
+	• Utilizar prefijos, Evitar nombres genericos
