@@ -156,3 +156,31 @@ Ambos comandos son útiles para realizar búsquedas y obtener información sobre
 ## **Repositorios dentro de otros repositorios (Submódulos)**
 
 Los submódulos en Git permiten mantener en un solo repositorio, múltiples subproyectos alojados en otros repositorios. Esto es útil cuando se quiere incluir un proyecto dentro de otro proyecto más grande, sin tener que copiar todo el código y mantener ambas copias separadas. Al usar submódulos, se puede mantener una referencia al repositorio original y permitir la actualización y la colaboración en ambos proyectos de manera más eficiente.
+## ¿Que son los tags?
+- Los tags o etiquetas se parecen al mensaje del commit.
+- Son identificadores asociados a versiones especificas de un repositorio.
+- Debemos usarlas para versionamiento productivo.
+- Estos versionamientos pueden ser lanzamiento de software o marcar hitos importantes.
+> version Alpha: Es el punto mas bajo del sistema.
+
+> version Beta: Es el punto intermedio del producto (version semiestable).
+
+> version release: de ellas se espera que esten mas cerca a produccion.
+
+> version 1.0: es la mas estable que se logra conseguir.
+
+> con **git tag** tenemos un identificador estatico.
+
+> podemos usar **git checkout tag** para llegar a un identificador del punto de la historia.
+
+## Comandos para la creacion de un tag
+- **git tag v1.0** para asignar el tag.
+- **git tag -s v1.0** envia un parametro al comando para firmar los tags.
+- **git push -tags** para publicar los tags
+- **git show v1.0** para mostrar informacion de un tag como si fuera un git log.
+
+## Comandos para GIT fetch, pull y push
+- **git fetch** descarga los cambios de un repositorio remoto a local.
+- **git pull** combina automaticamente los cambios del repositorio remoto con la rama actual en tu repositorio actual.
+- **git push** se usa para enviar cambios en la rama actual de tu repositorio local al repositorio remoto.
+
