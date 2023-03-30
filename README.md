@@ -4,14 +4,14 @@
 
 ## Contenido
 - [Sistemas de Control de versiones](#sistemas-de-control-de-versiones-)
-- [Que es GIT](#que-es-git)
+- [Que es GIT](#qué-es-git)
 - [Archivos de Texto y Binarios](#archivos-de-texto-y-binarios-)
 - [Crear un repositorio y un commit](#crear-un-repositorio-y-un-commit-)
-- [Verificar cambios entre archivos DIFF](#verificar-cambios-entre-archivos-)
-- [¿Que es el Staging y los Branch?](#que-es-el-staging-y-los-branch-)
-- [¿Que es un Merge?](#que-es-un-merge-)
-- [¿Como volver en el tiempo?](#como-volver-en-el-tiempo-)
-- [¿Como revertir cambios?](#como-revertir-cambios-)
+- [Verificar cambios entre archivos DIFF](#verificar-cambios-entre-archivos-diff-)
+- [¿Que es el Staging y los Branch?](#qué-es-el-staging-y-los-branch-)
+- [¿Que es un Merge?](#qué-es-un-merge-)
+- [¿Como volver en el tiempo?](#cómo-volver-en-el-tiempo-)
+- [¿Como revertir cambios?](#cómo-revertir-cambios-)
 - [Repositorios remotos](#repositorios-remotos-)
 - [Peticiones de cambios](#peticiones-de-cambios-)
 - [Merge entre ramas y resolución de conflictos](#merge-entre-ramas-y-resolucion-de-conflictos-)
@@ -44,7 +44,6 @@
 - [Comandos Checkout y Blame](#comandos-checkout-y-blame)
 - [GIT Grep y Log](#git-grep-y-log)
 - [Submodulos](#submodulos)
-
 
 ## Sistemas de Control de versiones 📝
 
