@@ -54,7 +54,7 @@ En Git hay varias formas de volver en el tiempo para acceder a versiones anterio
 
 En Git hay varias formas de revertir cambios. Puedes revertir un commit específico utilizando el comando **`git revert`**, o revertir un archivo a su versión anterior utilizando **`git checkout`**
 . Si deseas revertir varios commits, puedes utilizar **`git revert -n`**
-. Además, existe la opción de utilizar el comando **`git reset`**, aunque es una operación peligrosa. Al revertir cambios, se crean nuevos commits que deshacen los cambios realizados, y es importante recordar que siempre se puede volver a los cambios originales si es necesario. Se recomienda crear una nueva rama antes de realizar cambios importantes para poder revertirlos de manera segura si es necesario.
+. Además, existe la opción de utilizar el comando **`git reset`**, aunque es una operación peligrosa. Al revertir cambios, se crean nuevos commits que deshacen los cambios realizados, y es importante recordar que siempre se puede volver a los cambios originales si es necesario. Se recomienda crear una nueva rama antes de realizar cambios importantes para poder revertirlos de manera segura si es necesario. Algunos tipos de git reset son los siguientes: `git reset --hard` vuelve a un punto en la historia y elimina todo lo que sigue, permitiendo eliminar permanentemente los cambios, `git reset --soft` regresa a un punto de la historia pero sin eliminar los cambios siguientes.  
 
 ### Flags para git reset
 
@@ -67,6 +67,15 @@ En Git hay varias formas de revertir cambios. Puedes revertir un commit específ
 Un repositorio remoto en Git es una versión de tu proyecto alojada en un servidor remoto. Te permite colaborar con otros desarrolladores y mantener una copia segura de tu código en caso de pérdida o daño en tu computadora local. Para trabajar con repositorios remotos en Git, debes vincular tu repositorio local con el repositorio remoto mediante el comando **`git remote add`**
 . Puedes enviar tus cambios locales al repositorio remoto utilizando **`git push`**, y descargar los cambios realizados en el repositorio remoto utilizando **`git fetch`**
 . Los repositorios remotos son esenciales para el trabajo colaborativo con Git.
+**git clone --mirror <repositorio-a-duplicar> <repositorio-donde-alojar-nuevo-repo>**
+- todas las refs estaran disponibles en el repositorio nuevo como una copia del original
+- obtendras todas las tags
+- obtendras todas las ramas
+- todas las ramas remotas estaran disponibles en el repositorio destiono.
+paso:
+- git clone --mirror <repositorio-fuente>
+- git remote set-url --push origin <repositori-destino>
+- git push --mirror
 
 ## Peticiones de cambios
 
