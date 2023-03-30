@@ -353,3 +353,37 @@ fork permite experimentar con el código sin el temor de dañar el respositorio 
 ## git rm --cached <archivo>
  dejar de seguir los cambios en un archivo que git estaba versionando, pero sin eliminarlo del sistema operativo.
 
+# Git Reset y Reflog: úsese en caso de emergencia
+![](https://johngodlee.github.io/geotaster_git_workshop/img/geotaster_git_banner.png)
+
+## Git nunca olvida, git reflog
+Git guarda todos los cambios aunque decidas borrarlos, al borrar un cambio lo que estás haciendo sólo es actualizar la punta del branch, para gestionar éstas puntas existe un mecanismo llamado registros de referencia o reflogs.
+.
+La gestión de estos cambios es mediante los hash’es de referencia (o ref) que son apuntadores a los commits.
+.
+Los recoges registran cuándo se actualizaron las referencias de Git en el repositorio local (sólo en el local), por lo que si deseas ver cómo has modificado la historia puedes utilizar el comando:
+
+```
+git reflog
+```
+
+Muchos comandos de Git aceptan un parámetro para especificar una referencia o “ref”, que es un puntero a una confirmación sobre todo los comandos:
+
+- git checkout Puedes moverte sin realizar ningún cambio al commit exacto de la ref
+
+```
+git checkout eff544f
+```
+- git reset: Hará que el último commit sea el pasado por la ref, usar este comando sólo si sabes exactamente qué estás haciendo
+
+```
+git reset --hard eff544f # Perderá todo lo que se encuentra en staging y en el Working directory y se moverá el head al commit eff544f
+git reset --soft eff544f # Te recuperará todos los cambios que tengas diferentes al commit eff544f, los agregará al staging area y moverá el head al commit eff544f
+```
+
+- git merge: Puedes hacer merge de un commit en específico, funciona igual que con una branch, pero te hace el merge del estado específico del commit mandado
+
+```
+git checkout master
+git merge eff544f # Fusionará en un nuevo commit la historia de master con el momento específico en el que vive eff544f
+```
