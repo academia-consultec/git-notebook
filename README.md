@@ -2,6 +2,18 @@
 
 # Introducción de GIT
 
+## Contenido
+- [Sistemas de Control de versiones](#sistemas-de-control-de-versiones)
+- [Que es GIT](#que-es-git)
+- [Archivos de Texto y Binarios](#archivos-de-texto-y-binarios)
+- [Crear un repositorio y un commit](#crear-un-repositorio-y-un-commit)
+- [Verificar cambios entre archivos DIFF](#verificar-cambios-entre-archivos)
+- [Que es el Staging y los Branch](#que-es-el-staging-y-los-branch)
+- [Que es un Merge](#que-es-un-merge)
+- [Como volver en el tiempo](#como-volver-en-el-tiempo)
+- [Como revertir cambios](#como-revertir-cambios)
+- [Repositorios remotos](#repositorios-remotos)
+
 ## Sistemas de Control de versiones
 
 Un sistema de control de versiones es una herramienta fundamental para el desarrollo de cualquier proyecto. Permite mantener un historial de cambios en los archivos, evitar la pérdida de datos, facilitar la colaboración en equipo y mejorar la gestión de cambios en el proyecto.
