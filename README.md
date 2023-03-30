@@ -68,7 +68,8 @@ Un fork en control de versiones es una copia independiente de un repositorio que
 
 ## ¿Qué son tags?
 
-Los tags en Git son identificadores asociados a versiones específicas de un repositorio. Se utilizan para marcar versiones importantes y hitos en el desarrollo de un proyecto, y se crean con el comando `git tag`. Los tags se pueden compartir con otros usuarios a través de repositorios remotos y se pueden ver con los comandos `git tag` y `git show`.
+Los tags en Git son identificadores asociados a versiones específicas de un repositorio. Se utilizan para marcar versiones importantes y hitos en el desarrollo de un proyecto, y se crean con el comando `git tag`. Los tags se pueden compartir con otros usuarios a través de repositorios remotos y se pueden ver con los comandos `git tag` y `git show`. Para firmar la tag con nuestras credenciales se utiliza `git tag -s`.
+
 
 ## GIT fetch, pull y push
 
@@ -156,3 +157,6 @@ Ambos comandos son útiles para realizar búsquedas y obtener información sobre
 ## **Repositorios dentro de otros repositorios (Submódulos)**
 
 Los submódulos en Git permiten mantener en un solo repositorio, múltiples subproyectos alojados en otros repositorios. Esto es útil cuando se quiere incluir un proyecto dentro de otro proyecto más grande, sin tener que copiar todo el código y mantener ambas copias separadas. Al usar submódulos, se puede mantener una referencia al repositorio original y permitir la actualización y la colaboración en ambos proyectos de manera más eficiente.
+
+
+
