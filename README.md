@@ -1,5 +1,9 @@
 # git-notebook
 
+## Que es github
+
+GitHub es una plataforma de desarrollo colaborativo de software para alojar proyectos utilizando el sistema de control de versiones Git.
+
 # Introducción a GIT
 
 ## Contenido
