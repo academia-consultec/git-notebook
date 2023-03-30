@@ -25,6 +25,7 @@ Para crear un repositorio y un commit en Git, se debe inicializar el repositorio
 
 Para verificar los cambios entre dos versiones de un archivo en Git, se debe utilizar el comando **`git diff`**
 . Este comando mostrará las diferencias entre el archivo actual y su última versión guardada o entre una versión específica del archivo y su versión actual.
+. Se puede agregar la bandera <hash> para comparar el archivo actual con una versión en especifico.
 
 ## ¿Qué es el Staging y los Branch?
 
@@ -43,6 +44,7 @@ En Git hay varias formas de volver en el tiempo para acceder a versiones anterio
 En Git hay varias formas de revertir cambios. Puedes revertir un commit específico utilizando el comando **`git revert`**, o revertir un archivo a su versión anterior utilizando **`git checkout`**
 . Si deseas revertir varios commits, puedes utilizar **`git revert -n`**
 . Además, existe la opción de utilizar el comando **`git reset`**, aunque es una operación peligrosa. Al revertir cambios, se crean nuevos commits que deshacen los cambios realizados, y es importante recordar que siempre se puede volver a los cambios originales si es necesario. Se recomienda crear una nueva rama antes de realizar cambios importantes para poder revertirlos de manera segura si es necesario.
+. En el comando **`git reset`** podemos indicarle dos opciones: **`--hard`** y **`--soft`**, siendo la primera para eliminar todos los commits posteriores y la segunda para que el sistema que se eliminaron, pero en realidad sigue ahí.
 
 ## Repositorios remotos
 
