@@ -293,7 +293,7 @@ Sexto paso: Realizar el push
 	git push origin documentacion/rm
 
 
-
+____________________________________________________________
 
 
 ### Flujos de trabajo avanzados
