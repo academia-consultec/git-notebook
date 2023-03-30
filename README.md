@@ -1,6 +1,6 @@
 # git-notebook
 
-# Introducción de GIT
+# Introducción de GIT - Siempre listo 30 de marzo del 2023
 
 ## Contenido
 - [Sistemas de Control de versiones](#sistemas-de-control-de-versiones)
@@ -38,7 +38,11 @@ Para crear un repositorio y un commit en Git, se debe inicializar el repositorio
 Para verificar los cambios entre dos versiones de un archivo en Git, se debe utilizar el comando **`git diff`**
 . Este comando mostrará las diferencias entre el archivo actual y su última versión guardada o entre una versión específica del archivo y su versión actual.
 
+
+NOTA: Utiliza el comando **`git log`** para ver el historial del commit junto al id de cada commit
+
 ## ¿Qué es el Staging y los Branch? 🌲
+
 
 El Staging y las Branches son dos conceptos importantes en Git. El Staging permite preparar los cambios antes de realizar un commit, mientras que las Branches permiten organizar el trabajo en diferentes funcionalidades del proyecto sin afectar el trabajo de otros desarrolladores.
 
@@ -244,6 +248,40 @@ aqui te muestro un video util y completo.
 git tag -s v1.0 (firma la creación de un tag)
 fork permite experimentar con el código sin el temor de dañar el respositorio original
 
+
+## Guia de como clonar un repositorio
+Partamos del punto en donde el dueño del repositorio remoto nos agregor como colaborador de ese repositorio y nos asignos los permisos necesarios.
+
+Pimer paso: Clonar
+
+	git clone https://github.com/academia-consultec/git-notebook.git
+
+Segundo paso: Creacion de una rama, se recomienda no trabajar en el main.
+
+	git branch documentacion/rm
+
+Tercer paso: Sincronizar el repositorio global con el remoto
+
+	git pull
+
+Cuarto paso: Editar el archivo README.md
+
+	nano README.md
+
+Quinto paso: Hacer commit
+
+	git add README.md
+	git commit -m "Edicion del README.md"
+	git status
+
+Sexto paso: Realizar el push
+
+	git push origin documentacion/rm
+
+
+
+
+
 ### Flujos de trabajo avanzados
 > Archivo **.gitignore**
 - Esto es especialmente util cuando tienes archivos que son generados automaticamente por tu aplicacion, como archivos de registro o archivos cache.
@@ -387,3 +425,4 @@ git reset --soft eff544f # Te recuperará todos los cambios que tengas diferente
 git checkout master
 git merge eff544f # Fusionará en un nuevo commit la historia de master con el momento específico en el que vive eff544f
 ```
+
