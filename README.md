@@ -54,7 +54,7 @@ En Git hay varias formas de volver en el tiempo para acceder a versiones anterio
 
 En Git hay varias formas de revertir cambios. Puedes revertir un commit específico utilizando el comando **`git revert`**, o revertir un archivo a su versión anterior utilizando **`git checkout`**
 . Si deseas revertir varios commits, puedes utilizar **`git revert -n`**
-. Además, existe la opción de utilizar el comando **`git reset`**, aunque es una operación peligrosa. Al revertir cambios, se crean nuevos commits que deshacen los cambios realizados, y es importante recordar que siempre se puede volver a los cambios originales si es necesario. Se recomienda crear una nueva rama antes de realizar cambios importantes para poder revertirlos de manera segura si es necesario.
+. Además, existe la opción de utilizar el comando **`git reset`**, aunque es una operación peligrosa. Al revertir cambios, se crean nuevos commits que deshacen los cambios realizados, y es importante recordar que siempre se puede volver a los cambios originales si es necesario. Se recomienda crear una nueva rama antes de realizar cambios importantes para poder revertirlos de manera segura si es necesario. Algunos tipos de git reset son los siguientes: `git reset --hard` vuelve a un punto en la historia y elimina todo lo que sigue, permitiendo eliminar permanentemente los cambios, `git reset --soft` regresa a un punto de la historia pero sin eliminar los cambios siguientes.  
 
 ### Flags para git reset
 
@@ -67,6 +67,15 @@ En Git hay varias formas de revertir cambios. Puedes revertir un commit específ
 Un repositorio remoto en Git es una versión de tu proyecto alojada en un servidor remoto. Te permite colaborar con otros desarrolladores y mantener una copia segura de tu código en caso de pérdida o daño en tu computadora local. Para trabajar con repositorios remotos en Git, debes vincular tu repositorio local con el repositorio remoto mediante el comando **`git remote add`**
 . Puedes enviar tus cambios locales al repositorio remoto utilizando **`git push`**, y descargar los cambios realizados en el repositorio remoto utilizando **`git fetch`**
 . Los repositorios remotos son esenciales para el trabajo colaborativo con Git.
+**git clone --mirror <repositorio-a-duplicar> <repositorio-donde-alojar-nuevo-repo>**
+- todas las refs estaran disponibles en el repositorio nuevo como una copia del original
+- obtendras todas las tags
+- obtendras todas las ramas
+- todas las ramas remotas estaran disponibles en el repositorio destiono.
+paso:
+- git clone --mirror <repositorio-fuente>
+- git remote set-url --push origin <repositori-destino>
+- git push --mirror
 
 ## Peticiones de cambios
 
@@ -78,7 +87,7 @@ El merge es el proceso de fusionar dos ramas en Git, normalmente la rama princip
 
 ## Gestión de ramas
 
-La gestión de ramas en Git permite trabajar en diferentes características de forma aislada sin interferir entre ellas. Esto se logra a través de la creación, eliminación, combinación y comparación de ramas. Además, la funcionalidad de etiquetado permite identificar y etiquetar versiones específicas del software.
+La gestión de ramas en Git permite trabajar en diferentes características de forma aislada sin interferir entre ellas. Esto se logra a través de la creación, eliminación, combinación y comparación de ramas. Además, la funcionalidad de etiquetado permite identificar y etiquetar versiones específicas del software. Para conocer las ramas existentes y la rama de trabajo local se puede utilizar el comando **`git branch`** el cual lo imprime en línea de comando.
 
 ## Forks en control de versiones
 
@@ -185,6 +194,35 @@ Los submódulos en Git permiten mantener en un solo repositorio, múltiples subp
 **`git help --all`** lista todos los posibles comandos.
 **`git <comando> -help`** permite ver una lista de todas las opciones de un comando.
 
+## ¿Que son los tags?
+- Los tags o etiquetas se parecen al mensaje del commit.
+- Son identificadores asociados a versiones especificas de un repositorio.
+- Debemos usarlas para versionamiento productivo.
+- Estos versionamientos pueden ser lanzamiento de software o marcar hitos importantes.
+> version Alpha: Es el punto mas bajo del sistema.
+
+> version Beta: Es el punto intermedio del producto (version semiestable).
+
+> version release: de ellas se espera que esten mas cerca a produccion.
+
+> version 1.0: es la mas estable que se logra conseguir.
+
+> con **git tag** tenemos un identificador estatico.
+
+> podemos usar **git checkout tag** para llegar a un identificador del punto de la historia.
+
+## Comandos para la creacion de un tag
+- **git tag v1.0** para asignar el tag.
+- **git tag -s v1.0** envia un parametro al comando para firmar los tags.
+- **git push -tags** para publicar los tags
+- **git show v1.0** para mostrar informacion de un tag como si fuera un git log.
+
+## Comandos para GIT fetch, pull y push
+- usamos **git fetch** descarga los cambios de un repositorio remoto a local.
+- usamos **git pull** combina automaticamente los cambios del repositorio remoto con la rama actual en tu repositorio actual.
+- usamos **git push** se usa para enviar cambios en la rama actual de tu repositorio local al repositorio remoto.
+
+
 ## Comando Basicos de GIT
 
 - `git init`
@@ -201,3 +239,6 @@ Los submódulos en Git permiten mantener en un solo repositorio, múltiples subp
 ## Video Informativo sobre git (explicacion completa)
 Si te intera saber mas sobre git y [¿Como Funciona git?](https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&cad=rja&uact=8&ved=2ahUKEwjawdTC9oP-AhWuEVkFHSwPB4sQtwJ6BAgLEAI&url=https%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3DjGehuhFhtnE&usg=AOvVaw3EzVfE049RTxvTijwZ3C9z)
 aqui te muestro un video util y completo.
+
+git tag -s v1.0 (firma la creación de un tag)
+fork permite experimentar con el código sin el temor de dañar el respositorio original.
