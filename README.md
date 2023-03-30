@@ -2,6 +2,18 @@
 
 # Introducción de GIT
 
+## Contenido
+- [Sistemas de Control de versiones](#sistemas-de-control-de-versiones)
+- [Que es GIT](#que-es-git)
+- [Archivos de Texto y Binarios](#archivos-de-texto-y-binarios)
+- [Crear un repositorio y un commit](#crear-un-repositorio-y-un-commit)
+- [Verificar cambios entre archivos DIFF](#verificar-cambios-entre-archivos)
+- [Que es el Staging y los Branch](#que-es-el-staging-y-los-branch)
+- [Que es un Merge](#que-es-un-merge)
+- [Como volver en el tiempo](#como-volver-en-el-tiempo)
+- [Como revertir cambios](#como-revertir-cambios)
+- [Repositorios remotos](#repositorios-remotos)
+
 ## Sistemas de Control de versiones
 
 Un sistema de control de versiones es una herramienta fundamental para el desarrollo de cualquier proyecto. Permite mantener un historial de cambios en los archivos, evitar la pérdida de datos, facilitar la colaboración en equipo y mejorar la gestión de cambios en el proyecto.
@@ -46,6 +58,12 @@ En Git hay varias formas de revertir cambios. Puedes revertir un commit específ
 . Además, existe la opción de utilizar el comando **`git reset`**, aunque es una operación peligrosa. Al revertir cambios, se crean nuevos commits que deshacen los cambios realizados, y es importante recordar que siempre se puede volver a los cambios originales si es necesario. Se recomienda crear una nueva rama antes de realizar cambios importantes para poder revertirlos de manera segura si es necesario.
 . En el comando **`git reset`** podemos indicarle dos opciones: **`--hard`** y **`--soft`**, siendo la primera para eliminar todos los commits posteriores y la segunda para que el sistema que se eliminaron, pero en realidad sigue ahí.
 
+### Flags para git reset
+
+- git reset --soft: Permite volver hacia un commit anterior suponiendo que lo de mas adelanta "no existe".
+
+- git reset --hard: ¡¡¡PELIGROSO!!! Directamente dice que todo lo que le sigue al commit al que regresaste no existe, se pierde esa sección de la historia del branch.
+
 ## Repositorios remotos
 
 Un repositorio remoto en Git es una versión de tu proyecto alojada en un servidor remoto. Te permite colaborar con otros desarrolladores y mantener una copia segura de tu código en caso de pérdida o daño en tu computadora local. Para trabajar con repositorios remotos en Git, debes vincular tu repositorio local con el repositorio remoto mediante el comando **`git remote add`**
@@ -62,7 +80,7 @@ El merge es el proceso de fusionar dos ramas en Git, normalmente la rama princip
 
 ## Gestión de ramas
 
-La gestión de ramas en Git permite trabajar en diferentes características de forma aislada sin interferir entre ellas. Esto se logra a través de la creación, eliminación, combinación y comparación de ramas. Además, la funcionalidad de etiquetado permite identificar y etiquetar versiones específicas del software.
+La gestión de ramas en Git permite trabajar en diferentes características de forma aislada sin interferir entre ellas. Esto se logra a través de la creación, eliminación, combinación y comparación de ramas. Además, la funcionalidad de etiquetado permite identificar y etiquetar versiones específicas del software. Para conocer las ramas existentes y la rama de trabajo local se puede utilizar el comando **`git branch`** el cual lo imprime en línea de comando.
 
 ## Forks en control de versiones
 
@@ -78,6 +96,11 @@ Los tags en Git son identificadores asociados a versiones específicas de un rep
  combina los cambios descargados con la rama actual en tu repositorio local y **`git push`**
  se utiliza para enviar los cambios locales al repositorio remoto.
 
+# Diferencias de GIT fetch y pull
+
+**`git fetch`** es el comando que le dice a tu git local que recupere la última información de los metadatos del original (aunque no hace ninguna transferencia de archivos.Es más bien como comprobar si hay algún cambio disponible). 
+**`git pull`** por otro lado hace eso Y trae (copia) esos cambios del repositorio remoto. 
+
 ## .gitignore
 
 **`.gitignore`** es un archivo que se utiliza para especificar los archivos y directorios que se deben ignorar en el control de versiones. Es útil para evitar agregar archivos generados automáticamente por tu aplicación o sistema de construcción al control de versiones, lo que puede llevar a conflictos innecesarios al fusionar ramas. Los patrones pueden incluir comodines y caracteres especiales para hacer coincidir nombres de archivo específicos o patrones de nombres de archivo. El archivo **`.gitignore`**se coloca en la raíz del directorio de tu repositorio Git.
@@ -90,7 +113,7 @@ Los tags en Git son identificadores asociados a versiones específicas de un rep
 
 Las convenciones para comentar commits son una práctica recomendada para que el historial de cambios en un repositorio sea más legible, comprensible y coherente. Se trata de establecer un formato y una estructura para los mensajes de los commits, de manera que se especifiquen de manera clara y concisa los cambios realizados y la razón de los mismos. Esto facilita la revisión de los cambios por parte de los miembros del equipo y ayuda a mantener un registro histórico completo de todas las modificaciones en el código. Algunas convenciones comunes incluyen el uso de un encabezado descriptivo, seguido de una descripción detallada de los cambios, el uso de palabras clave para identificar el tipo de cambio realizado (por ejemplo, "feat" para nuevas características, "fix" para correcciones de errores, etc.), y el uso de un límite de caracteres en el mensaje para evitar mensajes demasiado largos y desorganizados.
 
-## Convenciones para el nombramiento de banchs
+## Convenciones para el nombramiento de branchs
 
 Las convenciones para nombrar ramas en Git son una forma de estandarizar el nombre de las ramas de un proyecto, lo que facilita su comprensión y su uso por parte de los desarrolladores. Algunas de las convenciones más comunes son:
 
@@ -145,7 +168,7 @@ También podemos usar `git checkout <branch> -- <file>` para restaurar un archiv
 
 ## GIT blame
 
-**`git blame`** es un comando de Git que se utiliza para determinar qué usuario realizó cambios en qué parte del archivo y cuándo se realizaron esos cambios. Con este comando, se puede ver el historial de revisiones línea por línea y ver quién fue responsable de introducir cada cambio. Es especialmente útil para encontrar errores o problemas en un archivo específico y para determinar quién debe ser responsable de corregirlos. También se puede utilizar para entender el proceso de desarrollo de un archivo y cómo ha evolucionado con el tiempo.
+**`git blame`** es un comando de GIT que se utiliza para determinar qué usuario realizó cambios en qué parte del archivo y cuándo se realizaron esos cambios. Con este comando, se puede ver el historial de revisiones línea por línea y ver quién fue responsable de introducir cada cambio. Es especialmente útil para encontrar errores o problemas en un archivo específico y para determinar quién debe ser responsable de corregirlos. También se puede utilizar para entender el proceso de desarrollo de un archivo y cómo ha evolucionado con el tiempo.
 
 ## GIT grep y log
 
@@ -158,3 +181,48 @@ Ambos comandos son útiles para realizar búsquedas y obtener información sobre
 ## **Repositorios dentro de otros repositorios (Submódulos)**
 
 Los submódulos en Git permiten mantener en un solo repositorio, múltiples subproyectos alojados en otros repositorios. Esto es útil cuando se quiere incluir un proyecto dentro de otro proyecto más grande, sin tener que copiar todo el código y mantener ambas copias separadas. Al usar submódulos, se puede mantener una referencia al repositorio original y permitir la actualización y la colaboración en ambos proyectos de manera más eficiente.
+
+## ¿Que son los tags?
+- Los tags o etiquetas se parecen al mensaje del commit.
+- Son identificadores asociados a versiones especificas de un repositorio.
+- Debemos usarlas para versionamiento productivo.
+- Estos versionamientos pueden ser lanzamiento de software o marcar hitos importantes.
+> version Alpha: Es el punto mas bajo del sistema.
+
+> version Beta: Es el punto intermedio del producto (version semiestable).
+
+> version release: de ellas se espera que esten mas cerca a produccion.
+
+> version 1.0: es la mas estable que se logra conseguir.
+
+> con **git tag** tenemos un identificador estatico.
+
+> podemos usar **git checkout tag** para llegar a un identificador del punto de la historia.
+
+## Comandos para la creacion de un tag
+- **git tag v1.0** para asignar el tag.
+- **git tag -s v1.0** envia un parametro al comando para firmar los tags.
+- **git push -tags** para publicar los tags
+- **git show v1.0** para mostrar informacion de un tag como si fuera un git log.
+
+## Comandos para GIT fetch, pull y push
+- usamos **git fetch** descarga los cambios de un repositorio remoto a local.
+- usamos **git pull** combina automaticamente los cambios del repositorio remoto con la rama actual en tu repositorio actual.
+- usamos **git push** se usa para enviar cambios en la rama actual de tu repositorio local al repositorio remoto.
+
+## Comando Basicos de GIT
+
+- `git init`
+- `git add <Archivo>`
+- `git add .`
+- `git commit -m "Mensaje"`
+- `git diff <Archivo>`
+- `git diff <hash><Archivo>`
+- `git status`
+- `git branch <CurNombre><NuevoNombre>`
+- `git checkout <NombreDelBranch>`
+- `git checkout -b <NuevoNombre>`
+
+## Video Informativo sobre git (explicacion completa)
+Si te intera saber mas sobre git y [¿Como Funciona git?](https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&cad=rja&uact=8&ved=2ahUKEwjawdTC9oP-AhWuEVkFHSwPB4sQtwJ6BAgLEAI&url=https%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3DjGehuhFhtnE&usg=AOvVaw3EzVfE049RTxvTijwZ3C9z)
+aqui te muestro un video util y completo.
