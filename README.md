@@ -16,15 +16,18 @@
 
 ## Sistemas de Control de versiones 📝
 
-Un sistema de control de versiones es una herramienta fundamental para el desarrollo de cualquier proyecto. Permite mantener un historial de cambios en los archivos, evitar la pérdida de datos, facilitar la colaboración en equipo y mejorar la gestión de cambios en el proyecto.
+Un sistema de control de versiones es una herramienta fundamental para el desarrollo de cualquier proyecto. Permite mantener un historial de cambios en los archivos,  
+evitar la pérdida de datos, facilitar la colaboración en equipo y mejorar la gestión de cambios en el proyecto.
 
 ## ¿Qué es GIT?
 
-Git es un sistema de control de versiones distribuido que se utiliza principalmente para el desarrollo de software. Permite controlar las diferentes versiones de un proyecto, trabajar en equipo de manera más eficiente y es muy flexible y personalizable.
+Git es un sistema de control de versiones distribuido que se utiliza principalmente para el desarrollo de software.  
+Permite controlar las diferentes versiones de un proyecto, trabajar en equipo de manera más eficiente y es muy flexible y personalizable.
 
 ## Archivos de Texto y Binarios 📄
 
-En Git se pueden manejar dos tipos de archivos: archivos de texto y archivos binarios. Ambos son manejados de la misma manera, creando una copia completa de cada archivo en cada commit, pero los archivos binarios son más grandes y consumen más espacio en disco que los archivos de texto.
+En Git se pueden manejar dos tipos de archivos: archivos de texto y archivos binarios. Ambos son manejados de la misma manera,  
+creando una copia completa de cada archivo en cada commit, pero los archivos binarios son más grandes y consumen más espacio en disco que los archivos de texto.
 
 ## Crear un repositorio y un commit 📦
 
@@ -35,8 +38,8 @@ Para crear un repositorio y un commit en Git, se debe inicializar el repositorio
 
 ## Verificar cambios entre archivos ‘DIFF’ 🔎
 
-Para verificar los cambios entre dos versiones de un archivo en Git, se debe utilizar el comando **`git diff`**
-. Este comando mostrará las diferencias entre el archivo actual y su última versión guardada o entre una versión específica del archivo y su versión actual.
+Para verificar los cambios entre dos versiones de un archivo en Git, se debe utilizar el comando **`git diff`**.  
+Este comando mostrará las diferencias entre el archivo actual y su última versión guardada o entre una versión específica del archivo y su versión actual.
 
 
 NOTA: Utiliza el comando **`git log`** para ver el historial del commit junto al id de cada commit
@@ -44,17 +47,25 @@ NOTA: Utiliza el comando **`git log`** para ver el historial del commit junto al
 ## ¿Qué es el Staging y los Branch? 🌲
 
 
-El Staging y las Branches son dos conceptos importantes en Git. El Staging permite preparar los cambios antes de realizar un commit, mientras que las Branches permiten organizar el trabajo en diferentes funcionalidades del proyecto sin afectar el trabajo de otros desarrolladores.
+El Staging y las Branches son dos conceptos importantes en Git. El Staging permite preparar los cambios antes de realizar un commit,  
+mientras que las Branches permiten organizar el trabajo en diferentes funcionalidades del proyecto sin afectar el trabajo de otros desarrolladores.
 
 ## ¿Qué es un Merge? 🤝
 
-El Merge en Git es el proceso de combinar dos o más ramas en una sola rama. Se utiliza comúnmente para integrar cambios realizados en Branches separadas en la rama principal del proyecto. El proceso de Merge implica cambiar a la rama de destino, ejecutar el comando de Merge, resolver conflictos (si es necesario) y crear un nuevo commit.
+El Merge en Git es el proceso de combinar dos o más ramas en una sola rama. Se utiliza comúnmente para integrar cambios realizados en Branches separadas en la rama principal del proyecto.  
+El proceso de Merge implica cambiar a la rama de destino, ejecutar el comando de Merge, resolver conflictos (si es necesario) y crear un nuevo commit.
 
 ## ¿Cómo volver en el tiempo? 🕧
 
-En Git hay varias formas de volver en el tiempo para acceder a versiones anteriores de un proyecto, como revertir un commit, cambiar al estado de un commit anterior, crear una nueva rama desde un commit anterior o utilizar el comando reset. Es importante recordar que al retroceder en el tiempo, los cambios realizados posteriormente se perderán, a menos que se hayan guardado en una rama o commit diferente, por lo que se recomienda crear ramas y commits nuevos regularmente para evitar perder trabajo importante.
+En Git hay varias formas de volver en el tiempo para acceder a versiones anteriores de un proyecto, como revertir un commit, cambiar al estado de un commit anterior, crear una nueva rama desde un commit anterior o utilizar el comando reset.  
+Es importante recordar que al retroceder en el tiempo, los cambios realizados posteriormente se perderán, a menos que se hayan guardado en una rama o commit diferente, por lo que se recomienda crear ramas y commits nuevos regularmente para evitar perder trabajo importante.
 
 ## ¿Cómo revertir cambios? ⏳
+
+En Git hay varias formas de revertir cambios. Puedes revertir un commit específico utilizando el comando **`git revert`**, o revertir un archivo a su versión anterior utilizando **`git checkout`**.  
+Si deseas revertir varios commits, puedes utilizar **`git revert -n`**. 
+Además, existe la opción de utilizar el comando **`git reset`**, aunque es una operación peligrosa. Al revertir cambios, se crean nuevos commits que deshacen los cambios realizados, 
+y es importante recordar que siempre se puede volver a los cambios originales si es necesario. Se recomienda crear una nueva rama antes de realizar cambios importantes para poder revertirlos de manera segura si es necesario.
 
 En Git hay varias formas de revertir cambios. Puedes revertir un commit específico utilizando el comando **`git revert`**, o revertir un archivo a su versión anterior utilizando **`git checkout`**
 . Si deseas revertir varios commits, puedes utilizar **`git revert -n`**
