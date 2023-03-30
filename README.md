@@ -70,9 +70,9 @@ Para crear un repositorio y un commit en Git, se debe inicializar el repositorio
 
 ## Verificar cambios entre archivos ‘DIFF’ 🔎
 
-Para verificar los cambios entre dos versiones de un archivo en Git, se debe utilizar el comando **`git diff`**.  
-Este comando mostrará las diferencias entre el archivo actual y su última versión guardada o entre una versión específica del archivo y su versión actual.
-
+Para verificar los cambios entre dos versiones de un archivo en Git, se debe utilizar el comando **`git diff`**
+. Este comando mostrará las diferencias entre el archivo actual y su última versión guardada o entre una versión específica del archivo y su versión actual.
+- Se puede agregar la bandera hash para comparar el archivo actual con una versión en especifico.
 
 NOTA: Utiliza el comando **`git log`** para ver el historial del commit junto al id de cada commit
 
@@ -101,6 +101,8 @@ y es importante recordar que siempre se puede volver a los cambios originales si
 
 En Git hay varias formas de revertir cambios. Puedes revertir un commit específico utilizando el comando **`git revert`**, o revertir un archivo a su versión anterior utilizando **`git checkout`**
 . Si deseas revertir varios commits, puedes utilizar **`git revert -n`**
+. Además, existe la opción de utilizar el comando **`git reset`**, aunque es una operación peligrosa. Al revertir cambios, se crean nuevos commits que deshacen los cambios realizados, y es importante recordar que siempre se puede volver a los cambios originales si es necesario. Se recomienda crear una nueva rama antes de realizar cambios importantes para poder revertirlos de manera segura si es necesario.
+. En el comando **`git reset`** podemos indicarle dos opciones: **`--hard`** y **`--soft`**, siendo la primera para eliminar todos los commits posteriores y la segunda para que el sistema que se eliminaron, pero en realidad sigue ahí.
 . Además, existe la opción de utilizar el comando **`git reset`**, aunque es una operación peligrosa. Al revertir cambios, se crean nuevos commits que deshacen los cambios realizados, y es importante recordar que siempre se puede volver a los cambios originales si es necesario. Se recomienda crear una nueva rama antes de realizar cambios importantes para poder revertirlos de manera segura si es necesario. Algunos tipos de git reset son los siguientes: `git reset --hard` vuelve a un punto en la historia y elimina todo lo que sigue, permitiendo eliminar permanentemente los cambios, `git reset --soft` regresa a un punto de la historia pero sin eliminar los cambios siguientes.  
 
 ### Flags para git 🏳️
@@ -294,7 +296,7 @@ Los submódulos en Git permiten mantener en un solo repositorio, múltiples subp
 Si te intera saber mas sobre git y [¿Como Funciona git?](https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&cad=rja&uact=8&ved=2ahUKEwjawdTC9oP-AhWuEVkFHSwPB4sQtwJ6BAgLEAI&url=https%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3DjGehuhFhtnE&usg=AOvVaw3EzVfE049RTxvTijwZ3C9z)
 aqui te muestro un video util y completo.
 
-git tag -s v1.0 (firma la creación de un tag)
+`git tag -s v1.0` (firma la creación de un tag)
 fork permite experimentar con el código sin el temor de dañar el respositorio original
 
 ## Guia de como clonar un repositorio
