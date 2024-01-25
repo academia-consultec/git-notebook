@@ -63,8 +63,11 @@ Permite los siguientes puntos :bookmark_tabs: :
 ### ¿Qué es GIT?
 
 Git es un sistema de control de versiones distribuido que se utiliza principalmente para el desarrollo de software.  
+
+En lugar de tener un único espacio para todo el historial de versiones del software, como sucede de manera habitual en los sistemas de control de versiones antaño populares, en Git, la copia de trabajo del código de cada desarrollador es también un repositorio que puede albegar el historial completo de todos los cambios.
 Permite controlar las diferentes versiones de un proyecto, trabajar en equipo de manera más eficiente y es muy flexible y personalizable.
 Nos ayuda a llevar un control y asi poder gestionar de mejor manera las diferentes versiones que pueden surgir durante un proyecto en nuestro repositorio local y asi posteriormente cargarlo a un repositorio remoto.
+
 
 ### Archivos de Texto y Binarios 📄
 
