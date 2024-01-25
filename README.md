@@ -79,6 +79,9 @@ Para verificar los cambios entre dos versiones de un archivo en Git, se debe uti
 Este comando mostrará las diferencias entre el archivo actual y su última versión guardada o entre una versión específica del archivo y su versión actual.
 - Se puede agregar la bandera hash para comparar el archivo actual con una versión en especifico.
 
+Tambien permite detectar si 2 ficheros son iguales o diferentes. Pero únicamente podrá detallar las diferencias
+entre ficheros cuando estemos comparando ficheros de texto.
+
 
 NOTA: Utiliza el comando **`git log`** para ver el historial del commit junto al id de cada commit
 
