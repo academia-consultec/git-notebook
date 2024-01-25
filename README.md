@@ -52,6 +52,8 @@ GitHub es una plataforma de desarrollo colaborativo de software para alojar proy
 
 ### Sistemas de Control de versiones 📝
 
+
+
 Un sistema de control de versiones es una herramienta fundamental para el desarrollo de cualquier proyecto.
 Permite los siguientes puntos :bookmark_tabs: :
 - Mantener un historial de cambios en los archivos
@@ -60,6 +62,7 @@ Permite los siguientes puntos :bookmark_tabs: :
 - Mejora la gestión de cambios en el proyecto
 - Ingración con plataformas de Colaboración
 
+Esto es de gran ayuda para mantener un enfoque en cada desarrollador y facilita visión general en grandes proyectos.
 ### ¿Qué es GIT?
 
 Git es un sistema de control de versiones distribuido que se utiliza principalmente para el desarrollo de software.  
@@ -73,30 +76,23 @@ creando una copia completa de cada archivo en cada commit, pero los archivos bin
 Ademas de que los archivos binarios son más pesados, tambien debemos de tomar en cuenta de que al subir nuevamente este archivo va a volver a cargar todo el programa,
 por esto es recomendable no subier estos tipos de archivos.  
 
+Los archivos de texto son archivos normales que contienen información almacenada en formato ASCII y que el usuario puede leer.
+Los archivos binarios son archivos normales que contienen información que el sistema puede leer.
+
 ### Crear un repositorio y un commit 📦
 Pasos:
 
-<<<<<<< HEAD
-Para crear un repositorio y un commit en Git, se debe inicializar el directorio existente como un repositorio git con el comando **`git init`**
-, agregar los archivos al stage  **`git add`**
-, y crear un nuevo commit con **`git commit`**
-. Es importante utilizar un mensaje significativo para describir los cambios realizados en el commit y actualizar la rama principal del repositorio con frecuencia.
-Al crear un repositorio local en este paso suponemos que ya cuentas con una carpeta de proyecto en la cual queremos crear un repositorio.
-=======
 -Para crear un repositorio y un commit en Git, se debe inicializar el repositorio con el comando **`git init`**
 -Agregar los archivos al repositorio con **`git add`**
 -Paso siguiente es crear un nuevo commit con **`git commit`**
 >[!INOTE]
 >Es importante utilizar un mensaje significativo para describir los cambios realizados en el commit y actualizar la rama principal del repositorio con frecuencia.
->>>>>>> b7528b1e5c966d66718ff89b1a96166928554c33
 
 ### Verificar cambios entre archivos ‘DIFF’ 🔎
-
 
 Git diff es una herramienta importante para el trabajo diario en un proyecto. El comando se utiliza a menudo
 junto con git status y git log. Gracias a este comando, no solo obtiene una visión general de tu repositorio, sino 
 que además puedes identificar más rapidamente las fuentes de errores en el código en caso de problemas.
-
 
 NOTA: Utiliza el comando **`git log`** para ver el historial del commit junto al id de cada commit
 
