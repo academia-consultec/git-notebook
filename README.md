@@ -52,8 +52,13 @@ GitHub es una plataforma de desarrollo colaborativo de software para alojar proy
 
 ### Sistemas de Control de versiones 📝
 
-Un sistema de control de versiones es una herramienta fundamental para el desarrollo de cualquier proyecto. Permite mantener un historial de cambios en los archivos,  
-evitar la pérdida de datos, facilitar la colaboración en equipo y mejorar la gestión de cambios en el proyecto.
+Un sistema de control de versiones es una herramienta fundamental para el desarrollo de cualquier proyecto.
+Permite los siguientes puntos :bookmark_tabs: :
+- Mantener un historial de cambios en los archivos
+- Evita la pérdida de datos
+- Facilita la colaboración en equipo
+- Mejora la gestión de cambios en el proyecto
+- Ingración con plataformas de Colaboración
 
 ### ¿Qué es GIT?
 
@@ -63,15 +68,19 @@ Nos ayuda a llevar un control y asi poder gestionar de mejor manera las diferent
 
 ### Archivos de Texto y Binarios 📄
 
-En Git se pueden manejar dos tipos de archivos: archivos de texto y archivos binarios. Ambos son manejados de la misma manera,  
+En Git se pueden manejar dos tipos de archivos: archivos de texto y archivos binarios. Ambos son manejados de la misma manera,
 creando una copia completa de cada archivo en cada commit, pero los archivos binarios son más grandes y consumen más espacio en disco que los archivos de texto.
+Ademas de que los archivos binarios son más pesados, tambien debemos de tomar en cuenta de que al subir nuevamente este archivo va a volver a cargar todo el programa,
+por esto es recomendable no subier estos tipos de archivos.  
 
 ### Crear un repositorio y un commit 📦
+Pasos:
 
-Para crear un repositorio y un commit en Git, se debe inicializar el repositorio con el comando **`git init`**
-, agregar los archivos al repositorio con **`git add`**
-, y crear un nuevo commit con **`git commit`**
-. Es importante utilizar un mensaje significativo para describir los cambios realizados en el commit y actualizar la rama principal del repositorio con frecuencia.
+-Para crear un repositorio y un commit en Git, se debe inicializar el repositorio con el comando **`git init`**
+-Agregar los archivos al repositorio con **`git add`**
+-Paso siguiente es crear un nuevo commit con **`git commit`**
+>[!INOTE]
+>Es importante utilizar un mensaje significativo para describir los cambios realizados en el commit y actualizar la rama principal del repositorio con frecuencia.
 
 ### Verificar cambios entre archivos ‘DIFF’ 🔎
 
@@ -87,11 +96,14 @@ NOTA: Utiliza el comando **`git log`** para ver el historial del commit junto al
 
 El Staging y las Branches son dos conceptos importantes en Git. El Staging permite preparar los cambios antes de realizar un commit,  
 mientras que las Branches permiten organizar el trabajo en diferentes funcionalidades del proyecto sin afectar el trabajo de otros desarrolladores.
-
+Tambien podemos agregar el concepto de Stage area que vendria siendo el area donde nuestro documento pasa luego de ejecutar el comando git add y luego de eso tendriamos 
+que hacerle commit. Y las branches seria una manera de trabajar colaborativamente de forma mas ordenada.
 ### ¿Qué es un Merge? 🤝
 
 El Merge en Git es el proceso de combinar dos o más ramas en una sola rama. Se utiliza comúnmente para integrar cambios realizados en Branches separadas en la rama principal del proyecto.  
 El proceso de Merge implica cambiar a la rama de destino, ejecutar el comando de Merge, resolver conflictos (si es necesario) y crear un nuevo commit.
+El Merge es la accion de fusionar dos ramas con el comando (git merge "nombre de la rama"), o sea comparar archivo por archivo buscando cambios que se hayan realizado en cualquiera de las dos ramas esto, actualizando con los ultimos cambios la rama a la cual esta dirigido el merge.
+Es recomendable actualizar las ramas remotas a las cuales se les esta haciendo merge utilizando comandos como pull o fetch en dicha rama.
 
 ## ¿Cómo volver en el tiempo? 🕧
 
