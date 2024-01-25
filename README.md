@@ -71,11 +71,13 @@ En Git se pueden manejar dos tipos de archivos: archivos de texto y archivos bin
 creando una copia completa de cada archivo en cada commit, pero los archivos binarios son más grandes y consumen más espacio en disco que los archivos de texto.
 
 ### Crear un repositorio y un commit 📦
+Pasos:
 
-Para crear un repositorio y un commit en Git, se debe inicializar el repositorio con el comando **`git init`**
-, agregar los archivos al repositorio con **`git add`**
-, y crear un nuevo commit con **`git commit`**
-. Es importante utilizar un mensaje significativo para describir los cambios realizados en el commit y actualizar la rama principal del repositorio con frecuencia.
+-Para crear un repositorio y un commit en Git, se debe inicializar el repositorio con el comando **`git init`**
+-Agregar los archivos al repositorio con **`git add`**
+-Paso siguiente es crear un nuevo commit con **`git commit`**
+>[!INOTE]
+>Es importante utilizar un mensaje significativo para describir los cambios realizados en el commit y actualizar la rama principal del repositorio con frecuencia.
 
 ### Verificar cambios entre archivos ‘DIFF’ 🔎
 
