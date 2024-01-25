@@ -85,9 +85,9 @@ Pasos:
 ### Verificar cambios entre archivos ‘DIFF’ 🔎
 
 
-Para verificar los cambios entre dos versiones de un archivo en Git, se debe utilizar el comando **`git diff`**. \
-Este comando mostrará las diferencias entre el archivo actual y su última versión guardada o entre una versión específica del archivo y su versión actual.
-- Se puede agregar la bandera hash para comparar el archivo actual con una versión en especifico.
+Git diff es una herramienta importante para el trabajo diario en un proyecto. El comando se utiliza a menudo
+junto con git status y git log. Gracias a este comando, no solo obtiene una visión general de tu repositorio, sino 
+que además puedes identificar más rapidamente las fuentes de errores en el código en caso de problemas.
 
 
 NOTA: Utiliza el comando **`git log`** para ver el historial del commit junto al id de cada commit
