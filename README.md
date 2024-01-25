@@ -67,10 +67,11 @@ creando una copia completa de cada archivo en cada commit, pero los archivos bin
 
 ### Crear un repositorio y un commit 📦
 
-Para crear un repositorio y un commit en Git, se debe inicializar el repositorio con el comando **`git init`**
-, agregar los archivos al repositorio con **`git add`**
+Para crear un repositorio y un commit en Git, se debe inicializar el directorio existente como un repositorio git con el comando **`git init`**
+, agregar los archivos al stage  **`git add`**
 , y crear un nuevo commit con **`git commit`**
 . Es importante utilizar un mensaje significativo para describir los cambios realizados en el commit y actualizar la rama principal del repositorio con frecuencia.
+Al crear un repositorio local en este paso suponemos que ya cuentas con una carpeta de proyecto en la cual queremos crear un repositorio.
 
 ### Verificar cambios entre archivos ‘DIFF’ 🔎
 
