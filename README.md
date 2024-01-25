@@ -13,6 +13,9 @@ GitHub es una plataforma de desarrollo colaborativo de software para alojar proy
 - [Archivos de Texto y Binarios](#archivos-de-texto-y-binarios-)
 - [Crear un repositorio y un commit](#crear-un-repositorio-y-un-commit-)
 - [Verificar cambios entre archivos DIFF](#verificar-cambios-entre-archivos-diff-)
+Git diff es una herramienta importante para el trabajo diario en un proyecto. El comando se utiliza a menudo
+junto con git status y git log. Gracias a este comando, no solo obtiene una visión general de tu repositorio, sino 
+que además puedes identificar más rapidamente las fuentes de errores en el código en caso de problemas
 - [¿Que es el Staging y los Branch?](#qué-es-el-staging-y-los-branch-)
 - [¿Que es un Merge?](#qué-es-un-merge-)
 - [¿Como volver en el tiempo?](#cómo-volver-en-el-tiempo-)
