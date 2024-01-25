@@ -91,6 +91,7 @@ mientras que las Branches permiten organizar el trabajo en diferentes funcionali
 
 El Merge en Git es el proceso de combinar dos o más ramas en una sola rama. Se utiliza comúnmente para integrar cambios realizados en Branches separadas en la rama principal del proyecto.  
 El proceso de Merge implica cambiar a la rama de destino, ejecutar el comando de Merge, resolver conflictos (si es necesario) y crear un nuevo commit.
+El Merge es la accion de fusionar dos ramas, o sea comparar archivo por archivo buscando cambios que se hayan realizado en cualquiera de las dos ramas esto, actualizando con los ultimos cambios la rama a la cual esta dirigido el merge.
 
 ## ¿Cómo volver en el tiempo? 🕧
 
