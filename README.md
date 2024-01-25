@@ -82,20 +82,17 @@ Los archivos binarios son archivos normales que contienen información que el si
 ### Crear un repositorio y un commit 📦
 Pasos:
 
-- Para crear un repositorio y un commit en Git, se debe inicializar el repositorio con el comando **`git init`**
-- Agregar los archivos al repositorio con **`git add`**
-- Paso siguiente es crear un nuevo commit con **`git commit`**
-
+-Para crear un repositorio y un commit en Git, se debe inicializar el repositorio con el comando **`git init`**
+-Agregar los archivos al repositorio con **`git add`**
+-Paso siguiente es crear un nuevo commit con **`git commit`**
 >[!INOTE]
->Es importante utilizar un mensaje significativo para describir los cambios realizados en el commit y actualizar la rama principal del repositorio con frecuencia. Para realizar un **commit** con un mensaje debemos utiliza el comando `git commit -m <mensaje descriptivo>`, con el flag `-m` ya podremos colocar este mensaje.
+>Es importante utilizar un mensaje significativo para describir los cambios realizados en el commit y actualizar la rama principal del repositorio con frecuencia.
 
 ### Verificar cambios entre archivos ‘DIFF’ 🔎
-
 
 Git diff es una herramienta importante para el trabajo diario en un proyecto. El comando se utiliza a menudo
 junto con git status y git log. Gracias a este comando, no solo obtiene una visión general de tu repositorio, sino 
 que además puedes identificar más rapidamente las fuentes de errores en el código en caso de problemas.
-
 
 NOTA: Utiliza el comando **`git log`** para ver el historial del commit junto al id de cada commit
 
