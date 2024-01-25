@@ -55,8 +55,13 @@ que además puedes identificar más rapidamente las fuentes de errores en el có
 
 ### Sistemas de Control de versiones 📝
 
-Un sistema de control de versiones es una herramienta fundamental para el desarrollo de cualquier proyecto. Permite mantener un historial de cambios en los archivos,  
-evitar la pérdida de datos, facilitar la colaboración en equipo y mejorar la gestión de cambios en el proyecto.
+Un sistema de control de versiones es una herramienta fundamental para el desarrollo de cualquier proyecto.
+Permite los siguientes puntos :bookmark_tabs: :
+- Mantener un historial de cambios en los archivos
+- Evita la pérdida de datos
+- Facilita la colaboración en equipo
+- Mejora la gestión de cambios en el proyecto
+- Ingración con plataformas de Colaboración
 
 ### ¿Qué es GIT?
 
@@ -65,15 +70,19 @@ Permite controlar las diferentes versiones de un proyecto, trabajar en equipo de
 
 ### Archivos de Texto y Binarios 📄
 
-En Git se pueden manejar dos tipos de archivos: archivos de texto y archivos binarios. Ambos son manejados de la misma manera,  
+En Git se pueden manejar dos tipos de archivos: archivos de texto y archivos binarios. Ambos son manejados de la misma manera,
 creando una copia completa de cada archivo en cada commit, pero los archivos binarios son más grandes y consumen más espacio en disco que los archivos de texto.
+Ademas de que los archivos binarios son más pesados, tambien debemos de tomar en cuenta de que al subir nuevamente este archivo va a volver a cargar todo el programa,
+por esto es recomendable no subier estos tipos de archivos.  
 
 ### Crear un repositorio y un commit 📦
+Pasos:
 
-Para crear un repositorio y un commit en Git, se debe inicializar el repositorio con el comando **`git init`**
-, agregar los archivos al repositorio con **`git add`**
-, y crear un nuevo commit con **`git commit`**
-. Es importante utilizar un mensaje significativo para describir los cambios realizados en el commit y actualizar la rama principal del repositorio con frecuencia.
+-Para crear un repositorio y un commit en Git, se debe inicializar el repositorio con el comando **`git init`**
+-Agregar los archivos al repositorio con **`git add`**
+-Paso siguiente es crear un nuevo commit con **`git commit`**
+>[!INOTE]
+>Es importante utilizar un mensaje significativo para describir los cambios realizados en el commit y actualizar la rama principal del repositorio con frecuencia.
 
 ### Verificar cambios entre archivos ‘DIFF’ 🔎
 
