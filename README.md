@@ -103,9 +103,11 @@ NOTA: Utiliza el comando **`git log`** para ver el historial del commit junto al
 ## ¿Qué es el Staging y los Branch? 🌲
 
 El Staging y las Branches son dos conceptos importantes en Git. El Staging permite preparar los cambios antes de realizar un commit,  
-mientras que las Branches permiten organizar el trabajo en diferentes funcionalidades del proyecto sin afectar el trabajo de otros desarrolladores.
+
+mientras que las Branches permiten organizar el trabajo en diferentes funcionalidades del proyecto sin afectar el trabajo de otros desarrolladores. Agregado a la definicion del Staging area debes tratar los archivos en esta area por que puedes perderlos al hacer el salto de ramas. Una buena practica para tratar esta area es subir solamente lo que modificamso y no todos los archivos, para ello usamos -git add <nombre-arhivo> y no git add . , tambien usemos git status para comprobar los estados que serian sandbox, staging area y branch. 
 Tambien podemos agregar el concepto de Stage area que vendria siendo el area donde nuestro documento pasa luego de ejecutar el comando git add y luego de eso tendriamos 
 que hacerle commit. Y las branches seria una manera de trabajar colaborativamente de forma mas ordenada.
+
 ### ¿Qué es un Merge? 🤝
 
 El Merge en Git es el proceso de combinar dos o más ramas en una sola rama. Se utiliza comúnmente para integrar cambios realizados en Branches separadas en la rama principal del proyecto.  
