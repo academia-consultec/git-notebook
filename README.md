@@ -52,6 +52,8 @@ GitHub es una plataforma de desarrollo colaborativo de software para alojar proy
 
 ### Sistemas de Control de versiones 📝
 
+
+
 Un sistema de control de versiones es una herramienta fundamental para el desarrollo de cualquier proyecto.
 Permite los siguientes puntos :bookmark_tabs: :
 - Mantener un historial de cambios en los archivos
@@ -60,6 +62,7 @@ Permite los siguientes puntos :bookmark_tabs: :
 - Mejora la gestión de cambios en el proyecto
 - Ingración con plataformas de Colaboración
 
+Esto es de gran ayuda para mantener un enfoque en cada desarrollador y facilita visión general en grandes proyectos.
 ### ¿Qué es GIT?
 
 Git es un sistema de control de versiones distribuido que se utiliza principalmente para el desarrollo de software.  
