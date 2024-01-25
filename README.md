@@ -65,6 +65,9 @@ Permite controlar las diferentes versiones de un proyecto, trabajar en equipo de
 En Git se pueden manejar dos tipos de archivos: archivos de texto y archivos binarios. Ambos son manejados de la misma manera,  
 creando una copia completa de cada archivo en cada commit, pero los archivos binarios son más grandes y consumen más espacio en disco que los archivos de texto.
 
+Los archivos de texto son archivos normales que contienen información almacenada en formato ASCII y que el usuario puede leer.
+Los archivos binarios son archivos normales que contienen información que el sistema puede leer.
+
 ### Crear un repositorio y un commit 📦
 
 Para crear un repositorio y un commit en Git, se debe inicializar el repositorio con el comando **`git init`**
