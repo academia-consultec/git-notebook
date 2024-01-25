@@ -67,8 +67,10 @@ Permite controlar las diferentes versiones de un proyecto, trabajar en equipo de
 
 ### Archivos de Texto y Binarios 📄
 
-En Git se pueden manejar dos tipos de archivos: archivos de texto y archivos binarios. Ambos son manejados de la misma manera,  
+En Git se pueden manejar dos tipos de archivos: archivos de texto y archivos binarios. Ambos son manejados de la misma manera,
 creando una copia completa de cada archivo en cada commit, pero los archivos binarios son más grandes y consumen más espacio en disco que los archivos de texto.
+Ademas de que los archivos binarios son más pesados, tambien debemos de tomar en cuenta de que al subir nuevamente este archivo va a volver a cargar todo el programa,
+por esto es recomendable no subier estos tipos de archivos.  
 
 ### Crear un repositorio y un commit 📦
 Pasos:
