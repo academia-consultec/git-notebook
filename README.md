@@ -70,7 +70,7 @@ creando una copia completa de cada archivo en cada commit, pero los archivos bin
 Para crear un repositorio y un commit en Git, se debe inicializar el repositorio con el comando **`git init`**
 , agregar los archivos al repositorio con **`git add`**
 , y crear un nuevo commit con **`git commit`**
-. Es importante utilizar un mensaje significativo para describir los cambios realizados en el commit y actualizar la rama principal del repositorio con frecuencia.
+. Es importante utilizar un mensaje significativo para describir los cambios realizados en el commit y actualizar la rama principal del repositorio con frecuencia. Para realizar un **commit** con un mensaje debemos utiliza el comando `git commit -m <mensaje descriptivo>`, con el flag `-m` ya podremos colocar este mensaje.
 
 ### Verificar cambios entre archivos ‘DIFF’ 🔎
 
