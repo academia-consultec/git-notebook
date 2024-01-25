@@ -76,6 +76,9 @@ creando una copia completa de cada archivo en cada commit, pero los archivos bin
 Ademas de que los archivos binarios son más pesados, tambien debemos de tomar en cuenta de que al subir nuevamente este archivo va a volver a cargar todo el programa,
 por esto es recomendable no subier estos tipos de archivos.  
 
+Los archivos de texto son archivos normales que contienen información almacenada en formato ASCII y que el usuario puede leer.
+Los archivos binarios son archivos normales que contienen información que el sistema puede leer.
+
 ### Crear un repositorio y un commit 📦
 Pasos:
 
