@@ -59,6 +59,7 @@ evitar la pérdida de datos, facilitar la colaboración en equipo y mejorar la g
 
 Git es un sistema de control de versiones distribuido que se utiliza principalmente para el desarrollo de software.  
 Permite controlar las diferentes versiones de un proyecto, trabajar en equipo de manera más eficiente y es muy flexible y personalizable.
+Nos ayuda a llevar un control y asi poder gestionar de mejor manera las diferentes versiones que pueden surgir durante un proyecto en nuestro repositorio local y asi posteriormente cargarlo a un repositorio remoto.
 
 ### Archivos de Texto y Binarios 📄
 
