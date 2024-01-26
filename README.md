@@ -86,7 +86,12 @@ Pasos:
 -Agregar los archivos al repositorio con **`git add`**
 -Paso siguiente es crear un nuevo commit con **`git commit`**
 >[!INOTE]
->Es importante utilizar un mensaje significativo para describir los cambios realizados en el commit y actualizar la rama principal del repositorio con frecuencia.
+
+Creación de un repositorio a partir de una consulta de direccion URL
+Puedes usar parámetros de consulta para rellenar previamente los campos de formulario al crear un nuevo repositorio.
+Los parámetros de consulta son partes opcionales de una URL que puedes personalizar para compartir una vista de página web específica,
+como los resultados de filtro de búsqueda o una plantilla de propuestas en GitHub.
+Para especificar valores para los parámetros de consulta predefinidos, deben coincidir con el par clave y valor.
 
 ### Verificar cambios entre archivos ‘DIFF’ 🔎
 
