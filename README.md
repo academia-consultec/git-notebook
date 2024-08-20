@@ -177,6 +177,8 @@ Un fork en control de versiones es una copia independiente de un repositorio que
 
 Los tags en Git son identificadores asociados a versiones específicas de un repositorio. Se utilizan para marcar versiones importantes y hitos en el desarrollo de un proyecto, y se crean con el comando `git tag`. Los tags se pueden compartir con otros usuarios a través de repositorios remotos y se pueden ver con los comandos `git tag` y `git show`. Para firmar la tag con las credenciales del usuario se utiliza el comando `git tag -s`.
 
+### Git Diff
+Escribir el comando git diff <archivo> y presionar enter. Esto mostrará las diferencias del archivo.
 
 ### GIT fetch, pull y push 🔴🔵⚪ 
 
