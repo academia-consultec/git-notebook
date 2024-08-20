@@ -58,7 +58,7 @@ Un sistema de control de versiones es una herramienta fundamental para el desarr
 Permite los siguientes puntos :bookmark_tabs: :
 - Mantener un historial de cambios en los archivos
 - Evita la pérdida de datos
-- Facilita la colaboración en equipo
+- Facilita la colaboración en equipo.
 - Mejora la gestión de cambios en el proyecto
 - Ingración con plataformas de Colaboración
 
