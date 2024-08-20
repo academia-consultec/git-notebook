@@ -529,3 +529,7 @@ git merge eff544f # Fusionará en un nuevo commit la historia de master con el m
 	• Utilizar nombres cortos y descriptivos
 	• Utilizar nombres en minuscula separados por guiones o barra diagonal
 	• Utilizar prefijos, Evitar nombres genericos
+
+## MarksDown
+### Encabezado
+- Para crear un encabezado, agrega entre uno y seis símbolos **#** antes del encabezado del texto. El número de **#** que utilices determinará el nivel jerárquico y el tamaño tipográfico del encabezado.
